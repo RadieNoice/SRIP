@@ -1,0 +1,50 @@
+[
+  {
+    "question": "Explain the concept of symmetric-key encipherment, its advantages and disadvantages, and classify the types of symmetric-key ciphers with examples.",
+    "rubric": [
+      "Explanation of symmetric-key encipherment and its reliance on key secrecy for security - 3 marks",
+      "Discussion of advantages (e.g., speed, efficiency) and disadvantages (e.g., key distribution challenges) - 3 marks",
+      "Classification into block ciphers (e.g., AES) and stream ciphers (e.g., RC4) with examples - 4 marks"
+    ],
+    "prompt_version": "v4"
+  },
+  {
+    "question": "Explain the main components of symmetric-key encipherment and their importance in ensuring secure communication, including a discussion on key management.",
+    "rubric": [
+      "Identification and clear description of the main components (encryption/decryption processes, mathematical principles, practical implementation) - 3 marks",
+      "Explanation of the importance of each component in ensuring security - 3 marks",
+      "Discussion of key management, including its role and significance in symmetric-key cryptography - 4 marks"
+    ],
+    "prompt_version": "v4"
+  },
+  {
+    "question": "Explain the concept of symmetric-key cryptography, its advantages, disadvantages, and the factors that influence its security.",
+    "rubric": [
+      "Definition and explanation of symmetric-key cryptography, including the use of a single secret key for encryption and decryption, and the importance of key secrecy. - 3 marks",
+      "Description of the advantages, such as high speed of encryption/decryption, low computational requirements, and scalability. - 3 marks",
+      "Discussion of the disadvantages, including the need for secure key exchange, limitation to providing confidentiality, and vulnerability if the key is compromised. - 3 marks",
+      "Explanation of the factors influencing security, such as the strength of the encryption algorithm and the length of the key. - 1 mark"
+    ],
+    "prompt_version": "v4"
+  },
+  {
+    "question": "Explain symmetric-key encipherment, including its advantages, disadvantages, and the key principle underlying its security.",
+    "rubric": [
+      "Definition of symmetric-key encipherment, including the use of a single secret key for both encryption and decryption. - 3 marks",
+      "Explanation of the advantages, such as high speed of encryption/decryption and low computational requirements. - 2 marks",
+      "Discussion of the disadvantages, particularly the key distribution problem and challenges in key management. - 3 marks",
+      "Identification and explanation of Kerckhoffs' principle and its relevance to the security of symmetric-key systems. - 2 marks"
+    ],
+    "prompt_version": "v4"
+  },
+  {
+    "question": "Explain the advantages and limitations of symmetric-key encipherment and compare it with asymmetric-key cryptography. Be sure to include a discussion on security considerations.",
+    "rubric": [
+      "Identify and explain the advantages of symmetric-key encipherment, such as encryption speed and computational efficiency. - 3 marks",
+      "Discuss the limitations of symmetric-key encipherment, including key management challenges and scalability issues. - 3 marks",
+      "Compare symmetric-key encipherment with asymmetric-key cryptography, highlighting differences in key usage. - 2 marks",
+      "Explain the security considerations, including the impact of key length on brute-force attacks. - 2 marks"
+    ],
+    "prompt_version": "v4"
+  }
+]

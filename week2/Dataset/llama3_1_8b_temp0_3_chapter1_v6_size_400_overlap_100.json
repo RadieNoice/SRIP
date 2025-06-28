@@ -1,0 +1,48 @@
+[
+  {
+    "question": "What is the primary characteristic that differentiates symmetric-key encipherment from asymmetric-key encipherment?",
+    "rubric": [
+      "Clearly identifies the key difference between symmetric-key and asymmetric-key encipherment - 3 marks",
+      "Provides a concise explanation of how this difference affects encryption and decryption processes - 4 marks",
+      "Offers an example or illustration to demonstrate the distinction, if applicable - 3 marks"
+    ],
+    "prompt_version": "v6_size_400_overlap_100"
+  },
+  {
+    "question": "What is the primary characteristic that distinguishes symmetric-key encipherment from other cryptographic techniques?",
+    "rubric": [
+      "Clearly defines the key feature of symmetric-key encipherment - 3 marks",
+      "Provides a concise explanation of why this feature makes it distinct from other techniques, such as asymmetric-key encipherment and hashing - 4 marks",
+      "Offers an example or analogy to illustrate the significance of this characteristic in real-world applications - 3 marks"
+    ],
+    "prompt_version": "v6_size_400_overlap_100"
+  },
+  {
+    "question": "What is the primary characteristic that distinguishes symmetric-key encipherment from other cryptographic techniques?",
+    "rubric": [
+      "Clearly defines the key feature of symmetric-key encipherment - 3 marks",
+      "Explains how this feature enables secure communication over insecure channels - 4 marks",
+      "Provides a brief comparison with asymmetric-key encipherment and hashing to illustrate its distinctiveness - 3 marks"
+    ],
+    "prompt_version": "v6_size_400_overlap_100"
+  },
+  {
+    "question": "What is the primary characteristic that distinguishes symmetric-key encipherment from other cryptographic techniques?",
+    "rubric": [
+      "The question clearly identifies the key feature of symmetric-key encipherment, mentioning a specific aspect related to key management - 3 marks",
+      "A good answer will explain how this characteristic enables secure communication over an insecure channel, without explicitly stating \"secure\" or \"insecure\" - 4 marks",
+      "The answer should also provide a brief comparison with other cryptographic techniques (asymmetric-key encipherment and hashing) to demonstrate understanding of the context - 3 marks"
+    ],
+    "prompt_version": "v6_size_400_overlap_100"
+  },
+  {
+    "question": "What is the primary characteristic that distinguishes symmetric-key encipherment from other cryptographic techniques?",
+    "rubric": [
+      "Clearly defines the key feature of symmetric-key encipherment - 3 marks",
+      "Provides a brief explanation of how this feature enables secure communication - 4 marks",
+      "Includes an example or analogy to illustrate the concept, if applicable - 2 marks",
+      "Demonstrates understanding of the differences between symmetric-key and other cryptographic techniques (asymmetric-key, hashing) - 1 mark"
+    ],
+    "prompt_version": "v6_size_400_overlap_100"
+  }
+]

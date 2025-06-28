@@ -1,0 +1,48 @@
+[
+  {
+    "question": "What is the primary advantage of using symmetric-key cryptography over asymmetric-key cryptography?",
+    "rubric": [
+      "Clearly explains why symmetric-key cryptography is faster than asymmetric-key cryptography - 4 marks",
+      "Provides a concise definition of what makes a function a \"trapdoor one-way function\" and its relevance to decryption - 3 marks",
+      "Briefly describes how the shared secret key enables both encryption and decryption in symmetric-key cryptography, without repeating information from the context - 3 marks"
+    ],
+    "prompt_version": "v1_semantic_chunking"
+  },
+  {
+    "question": "What is the primary advantage of using symmetric-key cryptography over asymmetric-key cryptography?",
+    "rubric": [
+      "Clearly explains why symmetric-key cryptography is faster than asymmetric-key cryptography - 4 marks",
+      "Provides an example or illustration to support the claim that asymmetric-key cryptography is slower - 3 marks",
+      "Briefly describes how this difference in speed affects the choice of cryptographic method for a particular application - 3 marks"
+    ],
+    "prompt_version": "v1_semantic_chunking"
+  },
+  {
+    "question": "What is the primary advantage of using symmetric-key cryptography over asymmetric-key cryptography?",
+    "rubric": [
+      "The answer clearly states that symmetric-key cryptography is faster than asymmetric-key cryptography - 4 marks",
+      "The answer explains how this speed difference affects the practical application of cryptographic techniques in real-world scenarios - 3 marks",
+      "The answer provides a concise definition or example to illustrate the concept of symmetric-key and asymmetric-key cryptography, demonstrating an understanding of their fundamental differences - 3 marks"
+    ],
+    "prompt_version": "v1_semantic_chunking"
+  },
+  {
+    "question": "What is the primary advantage of using symmetric-key cryptography over asymmetric-key cryptography in terms of computational efficiency?",
+    "rubric": [
+      "Clearly explain why symmetric-key cryptography is faster than asymmetric-key cryptography (4 marks)",
+      "Provide a specific example or scenario where the speed difference between symmetric-key and asymmetric-key cryptography would be significant (3 marks)",
+      "Describe how the trade-off between security and computational efficiency is managed in modern cryptographic systems that use both symmetric-key and asymmetric-key cryptography (3 marks)"
+    ],
+    "prompt_version": "v1_semantic_chunking"
+  },
+  {
+    "question": "What is the primary advantage of using asymmetric-key cryptography over symmetric-key cryptography in terms of computational efficiency?",
+    "rubric": [
+      "Clearly states that asymmetric-key cryptography is slower than symmetric-key cryptography - 2 marks",
+      "Provides a brief explanation for why this is the case, mentioning mathematical functions used in encryption and decryption - 4 marks",
+      "Optionally provides an example or analogy to illustrate the difference in speed between the two types of cryptography - 3 marks (optional)",
+      "Optionally mentions that this does not eliminate the need for symmetric-key cryptography - 1 mark (optional)"
+    ],
+    "prompt_version": "v1_semantic_chunking"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "question": "Which of the following scheduling algorithms is based on the shortest remaining time first (SRTF) principle?",
+    "ideal_answer": "The Shortest Job First (SJF) scheduling algorithm is based on the SRTF principle.",
+    "rubric": [
+      "Criteria A [1 Mark] - Identification of the correct scheduling algorithm based on the SRTF principle.",
+      "Criteria B [2 Marks] - Explanation of how SJF works and its importance in preventing job starvation.",
+      "Criteria C [2 Marks] - Brief mention of the other two algorithms (Round Robin and Multilevel Feedback Queue) that are part of the question, explaining their differences from SJF."
+    ],
+    "student_variants": [
+      {
+        "student_answer": "The scheduling algorithm that is based on the shortest remaining time first (SRTF) principle is Round Robin (RR). In RR, each process is assigned a time slice or quantum and if the process does not complete its task within that time slice, it is moved to the end of the queue so that other processes can get a chance to execute. This ensures that the process with the shortest remaining time gets to execute next, thereby reducing the average waiting time for all processes.",
+        "clarification": {
+          "score": 0,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student incorrectly identified Round Robin (RR) as the scheduling algorithm based on SRTF principle. The ideal answer states that SJF is based on this principle, so Criteria A [1 Mark] was not met. Additionally, they explained RR instead of SJF and failed to correctly explain how SJF works or its importance in preventing job starvation for Criteria B [2 Marks]. They only mentioned RR among the other algorithms but incorrectly described it as being based on SRTF, and completely omitted Multilevel Feedback Queue (MLFQ) from their explanation, failing to meet Criteria C [2 Marks] which requires brief mentions of both Round Robin and MLFQ with correct explanations of their differences from SJF."
+        },
+        "target_guided": {
+          "score": 0,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student incorrectly identified Round Robin (RR) as being based on the SRTF principle, which violates Criteria A. Additionally, their explanation of RR misrepresents how it works by confusing time slices with remaining execution time and job waiting times, failing to correctly describe either SJF or its relation to preventing starvation under Criteria B. The student did not properly explain Multilevel Feedback Queue (MFCQ) as part of Criteria C."
+        },
+        "selected_evaluation": {
+          "score": 0,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student incorrectly identified Round Robin (RR) as the scheduling algorithm based on SRTF principle. The ideal answer states that SJF is based on this principle, so Criteria A [1 Mark] was not met. Additionally, they explained RR instead of SJF and failed to correctly explain how SJF works or its importance in preventing job starvation for Criteria B [2 Marks]. They only mentioned RR among the other algorithms but incorrectly described it as being based on SRTF, and completely omitted Multilevel Feedback Queue (MLFQ) from their explanation, failing to meet Criteria C [2 Marks] which requires brief mentions of both Round Robin and MLFQ with correct explanations of their differences from SJF."
+        }
+      },
+      {
+        "student_answer": "The shortest remaining time first (SRTF) principle is used in the Round Robin scheduling algorithm.",
+        "clarification": {
+          "score": 0,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student incorrectly identified Round Robin as being based on the SRTF principle (Criteria A). They did not mention SJF at all and failed to explain how it works or its importance in preventing starvation. Additionally, they only mentioned one other algorithm (Round Robin) but neglected to include Multilevel Feedback Queue (Criteria C)."
+        },
+        "target_guided": {
+          "score": 0,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student's answer incorrectly attributes the SRTF principle to Round Robin scheduling algorithm (Criteria A). It fails to correctly identify SJF as being based on SRTF. The response does not explain how SJF works or its importance in preventing job starvation (Criteria B). Additionally, it makes no mention of Multilevel Feedback Queue and misrepresents the relationship between RR and SRTF (Criteria C)."
+        },
+        "selected_evaluation": {
+          "score": 0,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student incorrectly identified Round Robin as being based on the SRTF principle (Criteria A). They did not mention SJF at all and failed to explain how it works or its importance in preventing starvation. Additionally, they only mentioned one other algorithm (Round Robin) but neglected to include Multilevel Feedback Queue (Criteria C)."
+        }
+      },
+      {
+        "student_answer": "The Round Robin scheduling algorithm is based on the shortest remaining time first (SRTF) principle. In this algorithm, each process is given a fixed time slice to execute and once its time slice is over, it gets scheduled again even if it's not completed its previous execution. The algorithm is called SRTF because it allocates CPU time in such a way that the process with the shortest remaining time gets executed first.",
+        "clarification": {
+          "score": 0,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student's answer incorrectly identifies Round Robin as based on the SRTF principle. The ideal answer states that SJF is based on this principle, so Criteria A [1 Mark] is not met (0/1). Furthermore, the explanation focuses entirely on Round Robin and does not mention or explain SJF at all, failing to address its workings or importance in preventing job starvation as required by Criteria B [2 Marks]. Finally, while the other two algorithms are mentioned implicitly ('Round Robin' and 'Multilevel Feedback Queue'), there is no explicit comparison of their differences from SJF (the correct algorithm), so Criteria C [2 Marks] is also not met (0/2). Overall score: 0."
+        },
+        "target_guided": {
+          "score": 0,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student incorrectly identified the Round Robin algorithm as being based on SRTF. The ideal answer states that SJF is based on SRTF, so they failed Criteria A [1 Mark]. They did not mention SJF at all, which prevents them from fulfilling Criteria B [2 Marks] regarding its explanation and preventing starvation. Their incorrect focus on Round Robin also means they cannot adequately address Criteria C [2 Marks], as the response should have included brief mentions of the other algorithms (RR and MLFQ) with their differences from SJF/SRTF."
+        },
+        "selected_evaluation": {
+          "score": 0,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student's answer incorrectly identifies Round Robin as based on the SRTF principle. The ideal answer states that SJF is based on this principle, so Criteria A [1 Mark] is not met (0/1). Furthermore, the explanation focuses entirely on Round Robin and does not mention or explain SJF at all, failing to address its workings or importance in preventing job starvation as required by Criteria B [2 Marks]. Finally, while the other two algorithms are mentioned implicitly ('Round Robin' and 'Multilevel Feedback Queue'), there is no explicit comparison of their differences from SJF (the correct algorithm), so Criteria C [2 Marks] is also not met (0/2). Overall score: 0."
+        }
+      },
+      {
+        "student_answer": "The shortest remaining time first (SRTF) scheduling algorithm is based on the principle of selecting the process with the least remaining burst time to execute next. This algorithm is used in the Round Robin scheduling policy and it's effective when processes have diverse burst times.",
+        "clarification": {
+          "score": 3,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student's answer correctly identifies that SRTF selects the process with the least remaining burst time (Criteria A). However, they incorrectly state that SRTF is based on SJF and instead claim it is used in Round Robin scheduling policy. This confusion between SRTF and SJF/SJF being preemptive versus non-preemptive constitutes a significant error for Criteria A [1 Mark]. For Criteria B [2 Marks], the explanation of how SJF works (selecting processes with shorter burst times) is accurate, but it does not explicitly mention job starvation prevention. The student's answer implies this by saying 'shorter processes are prioritized' which indirectly prevents starvation, so partial credit applies here. For Criteria C [2 Marks], the brief mention of Round Robin scheduling policy is insufficient as they did not explain its differences from SJF/SRTF properly."
+        },
+        "target_guided": {
+          "score": 1,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student correctly identifies SRTF as being based on the shortest remaining time first principle, which aligns with Criteria A [1 Mark]. However, they incorrectly state that SJF is used in Round Robin scheduling (which confuses the relationship between these algorithms). The answer does not explain how SJF works or its importance regarding job starvation (missing Criteria B), nor does it properly mention and differentiate Multilevel Feedback Queue from SJF (missing Criteria C)."
+        },
+        "selected_evaluation": {
+          "score": 3,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student's answer correctly identifies that SRTF selects the process with the least remaining burst time (Criteria A). However, they incorrectly state that SRTF is based on SJF and instead claim it is used in Round Robin scheduling policy. This confusion between SRTF and SJF/SJF being preemptive versus non-preemptive constitutes a significant error for Criteria A [1 Mark]. For Criteria B [2 Marks], the explanation of how SJF works (selecting processes with shorter burst times) is accurate, but it does not explicitly mention job starvation prevention. The student's answer implies this by saying 'shorter processes are prioritized' which indirectly prevents starvation, so partial credit applies here. For Criteria C [2 Marks], the brief mention of Round Robin scheduling policy is insufficient as they did not explain its differences from SJF/SRTF properly."
+        }
+      },
+      {
+        "student_answer": "The scheduling algorithm based on the shortest remaining time first (SRTF) principle is called the Shortest Remaining Time First (SRTF) scheduler. It selects the process with the smallest remaining execution time for execution.",
+        "clarification": {
+          "score": 0,
+          "evaluation_strategy": "clarification",
+          "reasoning": "Invalid JSON format returned. Error: Expecting value: line 1 column 1 (char 0). Raw response: <think>\nOkay, let's tackle this problem. The user wants me to evaluate a student's answer against a specific rubric using the clarification strategy.\n\nFirst, I need to understand what the question is asking. It asks which scheduling algorithm is based on SRTF. The ideal answer mentions SJF (Shortest Job First). Now, looking at the student's answer: they say that SRTF scheduler selects processes with smallest remaining time. Wait, but according to my knowledge, SRTF is actually a preemptive version of SJF. So the correct term here should be SRTF itself, not SJF.\n\nThe rubric has three criteria:\nA) Correctly identifying the algorithm based on SRTF principle.\nB) Explaining how SJF works and preventing job starvation.\nC) Mentioning the other two algorithms (Round Robin and Multilevel Feedback Queue).\n\nCriterion A requires the correct identification. The student used \"SRTF scheduler\" but the ideal answer is SJF. However, SRTF is based on SJF's principle, so maybe they are close? But strictly speaking, the algorithm name should be SJF here.\n\nCriterion B asks for an explanation of SJF and its importance in preventing starvation. The student didn't mention SJF at all; their focus was entirely on SRTF. So this part is missing completely.\n\nCriterion C requires mentioning Round Robin (RR) and Multilevel Feedback Queue (MLFQ). The student only talked about SRTF, not the other algorithms. They did compare RR to non-preemptive versions but didn't properly address MLFQ or its differences from SJF/SRTF.\n\nThe user's instruction says to use clarification strategy. That means if there's ambiguity in the question or answer, we need to clarify it. The student might have confused SRTF and SJF as separate algorithms when they are actually related. So their misunderstanding needs to be addressed here.\n\nNow, assigning scores:\nCriterion A: They identified \"SRTF scheduler\" which is technically correct but not matching the ideal's SJF. Maybe partial credit? But since the question asks for the algorithm based on SRTF principle and the answer didn't use the term from the rubric (SJF), it might be a 0 here.\n\nCriterion B: No mention of SJF, so definitely no points here.\n\nCriterion C: They mentioned RR but not MLFQ. So maybe they get some credit for mentioning RR, perhaps 1 mark out of possible 2? But since the rubric says to explain both differences, and they didn't cover MLFQ at all, it's likely a score of 0 or minimal.\n\nWait, let me check again. The student did compare SRTF with RR (preemptive vs non-preemptive) but not with SJF as required in the rubric? No, the question is about which algorithm uses SRTF principle. So they should have identified that it's a preemptive version of SJF.\n\nBut the ideal answer says SJF is based on SRTF. Hmm, actually, according to standard definitions, SRTF is a preemptive version of SJF. The student correctly stated that but didn't mention SJF as part of their explanation for criterion B. \n\nWait, let me think again about each criterion.\n\nCriterion A: Correct identification. The answer says \"SRTF scheduler\" which is correct because the algorithm name here should be SRTF itself. So maybe they get full marks here? But the ideal answer uses SJF's name. Wait no—the question asks for the scheduling algorithm based on SRTF principle, and the student correctly identified it as SRTF. \n\nWait, but according to standard terminology, is SRTF considered a separate algorithm from SJF? Yes, because SJF can be non-preemptive while SRTF is preemptive. So maybe the question expects that the answer should mention SRTF itself.\n\nBut wait—the ideal answer says \"SJF scheduling algorithm\" is based on SRTF principle. That seems incorrect. Actually, standard knowledge: SRTF uses the same idea as SJF but with preemption. The student's answer correctly identifies it as a separate algorithm (SRTF) that follows the shortest remaining time first principle.\n\nWait, so maybe the ideal answer has an error? Or perhaps I'm misunderstanding. Let me clarify:\n\nSJF is non-preemptive: once a job starts, it runs until completion.\nSRTF is preemptive: if a new process arrives with shorter burst time, it preempts the current one.\n\nSo SRTF is based on SJF's principle but is a different algorithm because of preemption. Therefore, the correct answer should be that **SRTF** is the scheduling algorithm based on this principle, not SJF itself. \n\nWait, so in this case, the student's answer is technically correct: they identified SRTF as the algorithm using the shortest remaining time first principle. The ideal answer provided by the user says \"SJF\" which might be a mistake.\n\nBut wait—the question asks for an algorithm based on **SRTF** principle. So if SRTF itself uses that principle, then it's correct to say SRTF is the answer. \n\nHowever, in standard teaching, sometimes people conflate SJF and SRTF by saying SJF includes both non-preemptive and preemptive versions. But technically, they are separate algorithms.\n\nSo now, re-evaluating:\n\nCriterion A: The student correctly identified \"SRTF scheduler\" as the algorithm based on that principle. So this should be 1 mark (full points).\n\nCriterion B: They didn't explain SJF or its starvation prevention. Since SRTF is preemptive and doesn't have the same starvation issues, they might need to mention how it differs from non-preemptive SJF.\n\nWait no—the question asks for which algorithm uses SRTF principle. The student correctly identified that as SRTF but didn't explain how it works or its importance in preventing starvation (which is actually more relevant to SJF). \n\nBut according to the rubric, Criterion B requires explaining SJF and its importance. However, since the question's answer should focus on SRTF itself, maybe they need to address that.\n\nWait, let me check again: The ideal answer provided by the user says \"SJF scheduling algorithm is based on SRTF principle.\" That seems backwards because SRTF is a preemptive version of SJF. So perhaps there was an error in the ideal answer?\n\nBut regardless, the student's answer correctly identified that the algorithm using SRTF principle is called SRTF (preemptive). They didn't mention SJF at all.\n\nSo for Criterion A: Correct identification—yes, they got it right with \"SRTF scheduler\" as the algorithm. So 1 mark.\n\nCriterion B: Requires explanation of how SJF works and its importance in preventing starvation. The student did not address this part because their answer focused on SRTF itself rather than SJF. Therefore, no points here.\n\nCriterion C: Brief mention of RR and MLFQ explaining differences from SJF. They mentioned RR but didn't compare it properly to the principle (they said RR is non-preemptive while SRTF is preemptive). But they missed MLFQ entirely. So maybe partial credit for mentioning RR, perhaps 1 mark out of possible 2.\n\nWait, let me see: The rubric says Criterion C requires brief mention of both other algorithms and explaining their differences from SJF. However, the student's answer didn't explicitly compare to SJF but rather stated that SRTF is preemptive while RR isn't. Since the question was about which algorithm uses SRTF principle (SRTF), they might not need to address MLFQ or RR in relation to SJF? \n\nBut according to standard practice, when comparing scheduling algorithms, it's common to mention others like RR and MLFQ.\n\nWait, perhaps I'm overcomplicating. Let me break down the rubric again:\n\n- Criterion A: Identify correct algorithm based on SRTF principle (which is SRTF itself). Student did that correctly → 1 mark.\n- Criterion B: Explain how SJF works and its importance in preventing starvation. But the student didn't mention SJF at all, so they missed this entirely → 0 marks.\n- Criterion C: Mention RR and MLFQ explaining differences from SJF. The student only mentioned RR but not MLFQ, so incomplete here.\n\nSo total score would be A (1) + B (0) + C (partial for RR but missing MLFQ). Since the rubric says to explain both algorithms' differences from SJF, and they didn't mention MLFQ at all, perhaps they get 1 mark out of possible 2 for Criterion C.\n\nBut wait—the question is about which algorithm uses SRTF principle. The student correctly identified it as SRTF but didn't compare the other algorithms properly to SJF (they compared RR to SRTF). So maybe their explanation in criterion B was off because they focused on SRTF instead of SJF.\n\nWait, no—the question asks for an algorithm based on SRTF principle. The student's answer correctly identified that as SRTF but didn't explain how it works or its importance (which is part of the rubric). So Criterion A: 1 mark.\nCriterion B requires explaining SJF and starvation prevention—since they didn't do that, they get 0 here.\nCriterion C requires mentioning RR and MLFQ. They mentioned RR but not MLFQ, so perhaps half credit for this criterion.\n\nBut according to"
+        },
+        "target_guided": {
+          "score": 1,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "For Criteria A [1 Mark], the student correctly identified that an algorithm based on SRTF exists and named it 'SRTF scheduler'. However, according to the ideal answer and rubric interpretation, SJF is explicitly stated as being *based on* the SRTF principle. While SRTF itself uses this principle (which might be considered circular), the primary identification expected was for SJF.\n\nFor Criteria B [2 Marks], the student did not mention SJF at all in their answer, so they failed to explain how it works or its importance regarding job starvation.\n\nFor Criteria C [2 Marks], the student only mentioned SRTF and completely omitted Round Robin and Multilevel Feedback Queue. They also did not compare these algorithms with SJF as required."
+        },
+        "selected_evaluation": {
+          "score": 1,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "For Criteria A [1 Mark], the student correctly identified that an algorithm based on SRTF exists and named it 'SRTF scheduler'. However, according to the ideal answer and rubric interpretation, SJF is explicitly stated as being *based on* the SRTF principle. While SRTF itself uses this principle (which might be considered circular), the primary identification expected was for SJF.\n\nFor Criteria B [2 Marks], the student did not mention SJF at all in their answer, so they failed to explain how it works or its importance regarding job starvation.\n\nFor Criteria C [2 Marks], the student only mentioned SRTF and completely omitted Round Robin and Multilevel Feedback Queue. They also did not compare these algorithms with SJF as required."
+        }
+      },
+      {
+        "student_answer": "The scheduling algorithm that is based on the shortest remaining time first (SRTF) principle is Round Robin (RR). In RR, each process is given a fixed time quantum and the CPU is allocated to each process in turn, giving them equal priority. The scheduler selects the next process to run by looking at the remaining time of each process and selecting the one with the shortest remaining time.",
+        "clarification": {
+          "score": 1,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student incorrectly identified Round Robin (RR) as being based on SRTF, which is a fundamental error. The ideal answer states SJF uses the principle of choosing processes with shortest next CPU burst, but RR does not use this principle; it allocates fixed time slices regardless of remaining time. This means Criteria A [1 Mark] was incorrect. Additionally, the student failed to explain SJF or its importance regarding starvation prevention (Criteria B), and while they mentioned RR again in their explanation, they did not correctly describe how RR differs from SRTF-based algorithms like SJF (Criteria C)."
+        },
+        "target_guided": {
+          "score": 0,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student's answer incorrectly identifies Round Robin (RR) as being based on SRTF. According to the rubric, Criteria A requires identifying the correct scheduling algorithm based on SRTF principle, which is Shortest Job First (SJF). The explanation provided for SJF under Criteria B misrepresents its preemptive nature and fails to accurately describe how it works or prevent starvation without modification. Furthermore, the student incorrectly describes RR as using a remaining time principle in their attempt at Criteria C, while Multilevel Feedback Queue is completely omitted from the response."
+        },
+        "selected_evaluation": {
+          "score": 1,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student incorrectly identified Round Robin (RR) as being based on SRTF, which is a fundamental error. The ideal answer states SJF uses the principle of choosing processes with shortest next CPU burst, but RR does not use this principle; it allocates fixed time slices regardless of remaining time. This means Criteria A [1 Mark] was incorrect. Additionally, the student failed to explain SJF or its importance regarding starvation prevention (Criteria B), and while they mentioned RR again in their explanation, they did not correctly describe how RR differs from SRTF-based algorithms like SJF (Criteria C)."
+        }
+      },
+      {
+        "student_answer": "I believe the scheduling algorithm based on the shortest remaining time first (SRTF) principle is called the Shortest Remaining Time First (SRTF) scheduling algorithm. It is used in real-time operating systems to manage tasks with deadlines and ensure that they are completed on time. The SRTF algorithm prioritizes tasks based on their remaining execution time, giving preference to tasks that have the shortest remaining execution time. This ensures that the system allocates resources to complete the tasks before their deadlines, preventing missed deadlines and ensuring the system's reliability and responsiveness.",
+        "clarification": {
+          "score": 2,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student correctly identified that the algorithm is related to 'SJF' and described its features, which aligns with Criteria A [1 Mark] for identifying the correct scheduling algorithm based on SRTF principle. However, they did not explicitly state that SJF *is* based on SRTF (as required by the ideal answer), but rather linked it through description. They partially explained how SJF/SRTF works but failed to mention its importance in preventing job starvation as per Criteria B [2 Marks]. There was no mention or explanation of Round Robin and Multilevel Feedback Queue algorithms, so they did not meet Criteria C [2 Marks]."
+        },
+        "target_guided": {
+          "score": 3,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student's response incorrectly identified 'Shortest Remaining Time First (SRTF)' as being based on SRTF principle, rather than the correct answer which is Shortest Job First (SJF). This means they missed criterion A [1 Mark]. For criterion B [2 Marks], they provided a detailed explanation of how SRTF works but did not explain SJF's mechanism or its importance in preventing job starvation. Criterion C [2 Marks] was completely missing as the student failed to mention Round Robin and Multilevel Feedback Queue algorithms."
+        },
+        "selected_evaluation": {
+          "score": 3,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student's response incorrectly identified 'Shortest Remaining Time First (SRTF)' as being based on SRTF principle, rather than the correct answer which is Shortest Job First (SJF). This means they missed criterion A [1 Mark]. For criterion B [2 Marks], they provided a detailed explanation of how SRTF works but did not explain SJF's mechanism or its importance in preventing job starvation. Criterion C [2 Marks] was completely missing as the student failed to mention Round Robin and Multilevel Feedback Queue algorithms."
+        }
+      },
+      {
+        "student_answer": "The scheduling algorithm that is based on the shortest remaining time first (SRTF) principle is called Round-robin.",
+        "clarification": {
+          "score": 0,
+          "evaluation_strategy": "clarification",
+          "reasoning": [
+            {
+              "criterion": "Criteria A [1 Mark] - Identification of the correct scheduling algorithm based on the SRTF principle.",
+              "explanation": "The student incorrectly identified Round Robin as being based on the SRTF principle. The ideal answer stated that SJF is based on this principle, so the identification fails completely."
+            },
+            {
+              "criterion": "Criteria B [2 Marks] - Explanation of how SJF works and its importance in preventing job starvation.",
+              "explanation": "The student did not explain how SJF works or mention its importance regarding job starvation. They simply stated an incorrect algorithm, so they missed this criterion entirely."
+            },
+            {
+              "criterion": "Criteria C [2 Marks] - Brief mention of the other two algorithms (Round Robin and Multilevel Feedback Queue) that are part of the question, explaining their differences from SJF.",
+              "explanation": "The student only mentioned Round Robin as being related to SRTF, but failed to correctly identify SJF or explain its relation. They also did not mention Multilevel Feedback Queue at all, so they missed this criterion completely."
+            }
+          ]
+        },
+        "target_guided": {
+          "score": 0,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student incorrectly identified Round Robin as being based on SRTF, which fails to meet Criteria A [1 Mark]. They did not provide any explanation of how SJF works or its importance in preventing job starvation (which is the basis for Criteria B), so they also fail Criteria B. Furthermore, while they mentioned one algorithm (Round Robin) that is part of the question, their incorrect identification and lack of proper comparison prevent them from meeting Criteria C [2 Marks]."
+        },
+        "selected_evaluation": {
+          "score": 0,
+          "evaluation_strategy": "clarification",
+          "reasoning": [
+            {
+              "criterion": "Criteria A [1 Mark] - Identification of the correct scheduling algorithm based on the SRTF principle.",
+              "explanation": "The student incorrectly identified Round Robin as being based on the SRTF principle. The ideal answer stated that SJF is based on this principle, so the identification fails completely."
+            },
+            {
+              "criterion": "Criteria B [2 Marks] - Explanation of how SJF works and its importance in preventing job starvation.",
+              "explanation": "The student did not explain how SJF works or mention its importance regarding job starvation. They simply stated an incorrect algorithm, so they missed this criterion entirely."
+            },
+            {
+              "criterion": "Criteria C [2 Marks] - Brief mention of the other two algorithms (Round Robin and Multilevel Feedback Queue) that are part of the question, explaining their differences from SJF.",
+              "explanation": "The student only mentioned Round Robin as being related to SRTF, but failed to correctly identify SJF or explain its relation. They also did not mention Multilevel Feedback Queue at all, so they missed this criterion completely."
+            }
+          ]
+        }
+      },
+      {
+        "student_answer": "The scheduling algorithm based on the shortest remaining time first (SRTF) principle is the Shortest Remaining Time First (SRTF) scheduler.",
+        "clarification": {
+          "score": 1,
+          "evaluation_strategy": "clarification",
+          "reasoning": [
+            "The student correctly identified that SRTF is based on its principle (Criteria A [1 Mark]), so they should receive full marks for this part.",
+            "However, the ideal answer states that SJF is based on the SRTF principle. The student's answer does not mention SJF at all, which means they did not explain how SJF works or why it prevents starvation (Criteria B [2 Marks]).",
+            "The rubric requires a brief mention of the other two algorithms: Round Robin and Multilevel Feedback Queue. The student only named SRTF but failed to mention these others (Criteria C [2 Marks]) and did not explain their differences from SJF.",
+            "Therefore, despite correctly identifying one algorithm related to the principle, they missed explaining how it works or its importance (SJF), and completely omitted the other required algorithms. This results in a score of 1 out of 5."
+          ]
+        },
+        "target_guided": {
+          "score": 3,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student correctly identified that SRTF is based on a shortest remaining time principle, which aligns with Criteria A [1 Mark]. However, they did not explain how SJF works or its importance in preventing job starvation (Criteria B), nor did they mention the other two algorithms (Round Robin and Multilevel Feedback Queue) required by Criteria C. The answer is factually correct but incomplete according to the rubric."
+        },
+        "selected_evaluation": {
+          "score": 3,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student correctly identified that SRTF is based on a shortest remaining time principle, which aligns with Criteria A [1 Mark]. However, they did not explain how SJF works or its importance in preventing job starvation (Criteria B), nor did they mention the other two algorithms (Round Robin and Multilevel Feedback Queue) required by Criteria C. The answer is factually correct but incomplete according to the rubric."
+        }
+      },
+      {
+        "student_answer": "* The scheduling algorithm that is based on the shortest remaining time first (SRTF) principle is called the Shortest Remaining Time First (SRTF) algorithm.",
+        "clarification": {
+          "score": 1,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student correctly identified that SRTF is based on its own principle (the shortest remaining time first), which partially addresses criterion A. However, they did not explain how SJF works or mention other algorithms like Round Robin and Multilevel Feedback Queue as required by criteria B and C."
+        },
+        "target_guided": {
+          "score": 1,
+          "evaluation_strategy": "target_guided",
+          "reasoning": "The student's answer correctly identifies that the Shortest Remaining Time First (SRTF) algorithm is based on the shortest remaining time first principle. This satisfies Criteria A [1 Mark]. However, they fail to explain how SJF works or its importance in preventing job starvation as required by Criteria B [2 Marks], and do not mention or compare Round Robin or Multilevel Feedback Queue algorithms as needed for Criteria C [2 Marks]."
+        },
+        "selected_evaluation": {
+          "score": 1,
+          "evaluation_strategy": "clarification",
+          "reasoning": "The student correctly identified that SRTF is based on its own principle (the shortest remaining time first), which partially addresses criterion A. However, they did not explain how SJF works or mention other algorithms like Round Robin and Multilevel Feedback Queue as required by criteria B and C."
+        }
+      }
+    ]
+  }
+]

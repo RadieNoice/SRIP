@@ -1,0 +1,215 @@
+[
+  {
+    "question": "Analyze the time complexity of a Depth-First Search (DFS) algorithm on an undirected graph with n vertices and m edges using adjacency lists for representation.",
+    "ideal_answer": "The time complexity of DFS in this scenario is O(n + m). Here's the breakdown: \n1. Initializing the stack takes constant time, O(1).\n2. For each vertex, we perform three operations: push onto the stack, process the vertex, and pop from the stack. Since each operation takes O(1) time, the total time for processing all n vertices is O(n).\n3. In the worst case, DFS visits every edge exactly twice (once for each direction), so traversing all m edges takes O(m) time. Therefore, the overall time complexity of DFS on an undirected graph with adjacency lists is O(n + m).",
+    "rubric": [
+      "Correctly identify the algorithm and its representation (2 points)",
+      "Accurately break down the operations performed by the algorithm (3 points)",
+      "Properly analyze the time complexity of each operation and the overall algorithm (3 points)",
+      "Present a clear and concise explanation of the time complexity analysis (2 points)"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of a modified version of Dijkstra's Shortest Path Algorithm when used on a weighted directed graph with n vertices and m edges. The modification is that each vertex has an additional attribute 'visited_time' which is initially set to infinity (maximum value) for all vertices, and the priority queue is sorted based on this visited_time instead of the shortest distance from the source node. Explain how the time complexity changes compared to the original Dijkstra's algorithm.",
+    "ideal_answer": "The time complexity of the modified Dijkstra's Shortest Path Algorithm remains O(m log n) for the priority queue operations and O(n) for traversing each edge once. However, the additional visited_time attribute requires updating at each vertex visit, which takes O(n) time in total. Therefore, the overall time complexity of this modified algorithm is O(m log n + n), assuming that m >> n.",
+    "rubric": [
+      "Correctly identify the time complexity for priority queue operations and traversing edges (2 points)",
+      "Accurately analyze the time required to update visited_time attribute at each vertex visit (2 points)",
+      "Properly calculate the total time complexity of the modified algorithm (3 points)",
+      "Justify why the overall time complexity is different from the original Dijkstra's algorithm when m >> n (1 point)"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of the QuickSelect algorithm, a divide and conquer method for finding the kth smallest element in an unsorted array. Assume that the pivot selection strategy is 'Median of Medians'.",
+    "ideal_answer": "The QuickSelect algorithm uses the divide and conquer approach to solve the problem. The main function quickSelect(arr, k) takes last index as its parameter k. It first selects a pivot element from the array using the median of medians strategy. Then it partitions the array into two parts: left (smaller elements) and right (greater or equal elements). If k is equal to the index of the pivot, return the pivot. If k is less than this index, recursively call quickSelect on the left partition; otherwise, recursively call quickSelect on the right partition. The time complexity of the QuickSelect algorithm can be analyzed using the Master Theorem. Let T(n) represent the time complexity of the algorithm for an array of size n. T(n) = T(n/5) + T((3/5)*n) + O(n). Applying the Master Theorem with c=2, logb(3/5)=0.6309 and d=1, we get T(n) = θ(n*log(n))",
+    "rubric": [
+      "Correctly identify the algorithm as QuickSelect",
+      "Properly explain the pivot selection strategy as 'Median of Medians'",
+      "Accurately describe the recursive structure of the algorithm",
+      "Apply the Master Theorem correctly to analyze the time complexity",
+      "Provide the final Big O notation for the time complexity"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm in a graph with 'n' vertices and 'm' edges using Adjacency List representation.",
+    "ideal_answer": "O(n^2 + m) due to the following steps: initializing the priority queue (O(n)), visiting each vertex once (O(n)) for updating the shortest distance, and for each edge, updating the priority queue (O(log n)). Since there are 'm' edges, the total time complexity is O(n^2 + m).",
+    "rubric": [
+      "Correctly identify the algorithm being analyzed (Dijkstra's Shortest Path Algorithm)",
+      "Correctly describe the data structure used for graph representation (Adjacency List)",
+      "Accurately analyze the time complexity of each operation within the algorithm",
+      "Properly combine the time complexities of all operations to find the overall time complexity",
+      "Justify each step in the time complexity analysis with clear reasoning"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm when applied to a graph with 'n' vertices and 'm' edges.",
+    "ideal_answer": "The time complexity of Dijkstra's algorithm is O(n^2 + m), because for each vertex in the graph, it needs to be added to the priority queue once (O(n)) and then processed (O(n + m)), where n is the number of vertices and m is the number of edges. The loop over the adjacency list of each vertex also takes O(m) time.",
+    "rubric": [
+      "Identify the algorithm being analyzed",
+      "Correctly describe the Big O notation for the algorithm's time complexity",
+      "Explain why each term in the Big O notation is present",
+      "Justify the time complexity of each operation (e.g., adding a vertex to the priority queue, processing a vertex)",
+      "Provide an accurate overall time complexity expression"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm when applied to a weighted, directed graph with n vertices and m edges.",
+    "ideal_answer": "O(n^2 + m) for the worst-case scenario, where every vertex is connected to every other vertex (complete graph). This analysis considers the number of times each edge is processed during the algorithm's execution, taking into account both the priority queue operations and the updates to the shortest path distances.",
+    "rubric": [
+      "Identify the algorithm being analyzed correctly",
+      "Provide a correct time complexity expression for the worst-case scenario",
+      "Explain the reasoning behind the chosen time complexity expression",
+      "Describe the impact of the graph's structure on the time complexity",
+      "Demonstrate understanding of Big O notation and its application in analyzing algorithms"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm when applied to a weighted, directed graph with n vertices and m edges. Assume that all operations (like adding/removing an edge from the priority queue, updating distances, etc.) take constant time.",
+    "ideal_answer": "O(n^2 + m log n) for Dijkstra's Shortest Path Algorithm in a graph with n vertices and m edges. The first term (O(n^2)) comes from the worst-case scenario where we need to visit every vertex twice: once to mark it as visited, and once to update its distance. The second term (O(m log n)) is due to the priority queue operations, which have a time complexity of O(log n) per operation.",
+    "rubric": [
+      "Identify the algorithm being analyzed correctly",
+      "Correctly describe the input graph (n vertices and m edges)",
+      "Accurately analyze the time complexity for each operation in the algorithm",
+      "Properly combine the time complexities of all operations to find the overall time complexity",
+      "Justify each step of the analysis with clear reasoning"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm in a weighted, directed graph with n vertices and m edges.",
+    "ideal_answer": "O(n^2 + m) due to the need to visit each vertex once (n) and update its distance (priority queue operations) which takes O(m) in the worst case for a complete graph.",
+    "rubric": [
+      "Identify the algorithm correctly: Dijkstra's Shortest Path Algorithm",
+      "Describe the time complexity of visiting each vertex once: O(n)",
+      "Describe the time complexity of updating distances using a priority queue: O(log n) per operation, but since we need to update all edges incident to a vertex, it becomes O(m) in the worst case for a complete graph",
+      "Combine the two complexities and express the overall time complexity in big O notation: O(n^2 + m)",
+      "Provide a brief explanation of how the given complexity arises from the algorithm's steps"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm when applied to a graph with 'V' vertices and 'E' edges.",
+    "ideal_answer": "The time complexity of Dijkstra's algorithm is O(E log V) in the worst case. This is because for each vertex, we visit its adjacent vertices once (O(E)) and sort the priority queue (log V).",
+    "rubric": [
+      "Identify the algorithm correctly as Dijkstra's Shortest Path Algorithm",
+      "Correctly state that the time complexity is O(E log V)",
+      "Explain the steps taken for each vertex visit and their time complexity",
+      "Provide a clear explanation of why sorting the priority queue contributes log V to the overall time complexity",
+      "Properly format the answer in mathematical notation"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm in a graph with n vertices and m edges when using a priority queue implemented as a binary heap.",
+    "ideal_answer": "The time complexity of Dijkstra's algorithm in this scenario can be broken down into two parts: building the priority queue (which is O(m log m) due to insertion and deletion operations in a binary heap) and performing the actual algorithm (O(n + m)). The dominating term in these expressions is m log m, so the overall time complexity of Dijkstra's Shortest Path Algorithm using a binary heap priority queue in a graph with n vertices and m edges is O(m log m).",
+    "rubric": [
+      "Identify the algorithm being analyzed (Dijkstra's Shortest Path Algorithm)",
+      "Describe the data structure used for the priority queue (binary heap)",
+      "Analyze the time complexity of building the priority queue",
+      "Analyze the time complexity of performing the actual algorithm",
+      "Combine the time complexities and identify the overall time complexity of the algorithm"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm in a graph with n vertices and m edges, where all edge weights are non-negative.",
+    "ideal_answer": "Dijkstra's algorithm uses a priority queue to find the shortest path from a single starting vertex (source) to all other vertices in a graph. The time complexity of building the priority queue is O(n), since each vertex is inserted exactly once. In the worst case, every vertex except the source is visited and updated, so the total number of operations for visiting and updating vertices is O(n). The time complexity for extracting minimum from the priority queue is amortized O(log n) due to its binary heap structure. Since we visit each edge exactly twice (once for each endpoint), the time complexity for traversing edges is 2m. Therefore, the overall time complexity of Dijkstra's algorithm in a graph with n vertices and m edges is O(n + m log n).",
+    "rubric": [
+      "Identify the algorithm being analyzed (Dijkstra's Shortest Path Algorithm)",
+      "Describe the data structures used (priority queue) and their time complexity",
+      "Explain the worst-case scenario for vertex visits and updates",
+      "Calculate the time complexity for visiting and updating vertices",
+      "Determine the time complexity for traversing edges",
+      "Combine all calculations to find the overall time complexity of the algorithm"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm in a graph with n vertices and m edges using Adjacency List representation.",
+    "ideal_answer": "O(n^2 + m) due to iterating through all adjacent vertices for each vertex, followed by log(n) for priority queue operations which is a constant factor in the big O notation.",
+    "rubric": [
+      "Identify the algorithm used (Dijkstra's Shortest Path Algorithm)",
+      "Describe the data structure used for graph representation (Adjacency List)",
+      "Calculate the time complexity of iterating through all adjacent vertices for each vertex (O(n))",
+      "Calculate the time complexity of priority queue operations (log(n))",
+      "Combine both parts to get the overall time complexity (O(n^2 + m) + log(n))"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm when used on a graph with 'V' vertices and 'E' edges. Assume that all operations (comparison, addition, subtraction, multiplication) take constant time.",
+    "ideal_answer": "O(E + V^2) for the worst-case scenario, where every edge is connected to every other vertex.",
+    "rubric": [
+      "Identify the algorithm being analyzed (Dijkstra's Shortest Path Algorithm)",
+      "Describe the Big O time complexity of the algorithm in terms of 'V' and 'E'",
+      "Justify the time complexity by explaining the operations performed during each step of the algorithm",
+      "Provide a scenario where the given time complexity is achieved (every edge connected to every other vertex)",
+      "Demonstrate understanding of Big O notation by correctly representing the time complexity in terms of 'V' and 'E'"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm in a graph with n vertices and m edges using Adjacency List representation.",
+    "ideal_answer": "The time complexity of Dijkstra's Shortest Path Algorithm can be analyzed as follows: \n1. Initialization (creating the priority queue and setting distances to infinity except for the source vertex) takes O(n).\n2. For each edge, we update the distance if a shorter path is found. This happens at most n - 1 times for each vertex, so overall it takes O(m).\n3. Extracting the minimum vertex from the priority queue and updating its neighbors' distances takes O(log n) operations due to using a min-heap data structure. Since this operation repeats n - 1 times, the total time complexity is O((n - 1) * log n + m).",
+    "rubric": "1. Correctly identify the steps of Dijkstra's Algorithm and their time complexities (3 points)\n2. Properly analyze the overall time complexity considering all steps (4 points)\n3. Clearly explain the reasoning behind each step's time complexity (3 points)"
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm when applied to a graph with V vertices and E edges. Assume that all edge weights are non-negative.",
+    "ideal_answer": "The time complexity of Dijkstra's algorithm is O(E log V + V^2). Here's the breakdown: The priority queue operations (insertion, deletion) take O(log V) time each. Since there are at most E edges, the total time for these operations is O(E log V). The main loop iterates over all vertices once (O(V)) and in each iteration, it updates the shortest distance to its neighbors (at most degree of a vertex times once), which takes O(1) time. So, the total time for updating distances is O(V * max_degree). Since the maximum degree of any connected graph is V-1, the time complexity becomes O(V * (V-1)) = O(V^2). Therefore, the overall time complexity of Dijkstra's algorithm on a graph with V vertices and E edges is O(E log V + V^2).",
+    "rubric": [
+      "Correctly identify the algorithm being analyzed (Dijkstra's Shortest Path Algorithm)",
+      "Accurately describe the time complexity in big O notation",
+      "Breakdown the time complexity into the operations performed and their respective time complexities",
+      "Justify each operation's time complexity with appropriate reasoning",
+      "Combine all operation time complexities to arrive at the final overall time complexity of the algorithm"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of the QuickSelect algorithm, a divide and conquer method for finding the k-th smallest element in an unsorted array. Provide a big O notation for its worst-case scenario.",
+    "ideal_answer": "Big O Notation: O(n + k), where n is the size of the array and k is the position of the desired element. In the worst-case scenario, QuickSelect can behave like quicksort, which has a time complexity of O(n^2) when the input is already sorted in reverse order.",
+    "rubric": [
+      "Correctly identify the algorithm being analyzed (QuickSelect)",
+      "Properly define the variables used (n and k)",
+      "Provide the correct big O notation for the time complexity of the algorithm",
+      "Explain the worst-case scenario and why it leads to a time complexity of O(n^2)",
+      "Use appropriate mathematical notation and terminology"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm when applied to a weighted, directed graph with n vertices and m edges.",
+    "ideal_answer": "The time complexity of Dijkstra's algorithm is O(n^2 + m), because for each vertex in the graph (O(n)), we need to consider its adjacent vertices (at most m) and update the shortest distance if a shorter path is found. The priority queue operations, which are logarithmic in the number of elements, can be ignored when comparing big-O notations.",
+    "rubric": [
+      "Identify the algorithm correctly: Dijkstra's Shortest Path Algorithm",
+      "Describe the time complexity of the algorithm accurately: O(n^2 + m)",
+      "Explain why priority queue operations can be ignored for big-O notation",
+      "Use correct asymptotic notation: big-O",
+      "Provide a clear and concise answer"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm when applied to a weighted, directed graph with n vertices and m edges.",
+    "ideal_answer": "O(n^2 + m) due to the use of priority queue (min-heap) operations in the worst-case scenario, where every vertex is adjacent to every other vertex (complete graph), resulting in a time complexity of O(n log n) for the min-heap operations and O(m) for updating the shortest distance to each neighbor.",
+    "rubric": [
+      "Identify the algorithm being analyzed: Dijkstra's Shortest Path Algorithm",
+      "Describe the graph structure: weighted, directed, with n vertices and m edges",
+      "Determine the time complexity of the min-heap operations in the worst-case scenario (O(n log n))",
+      "Calculate the time complexity for updating the shortest distance to each neighbor (O(m))",
+      "Combine both parts to find the overall time complexity (O(n^2 + m))"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm when applied to a graph with 'n' vertices and 'm' edges.",
+    "ideal_answer": "The time complexity of Dijkstra's algorithm can be analyzed using Big O notation. The algorithm maintains a priority queue, which takes O(log n) time per operation on average. The algorithm visits each vertex once, and for each vertex, it considers all its adjacent vertices (at most 2m operations). Therefore, the overall time complexity is O((log n) * (n + m)).",
+    "rubric": [
+      "Identify the algorithm correctly (Dijkstra's Shortest Path Algorithm)",
+      "Analyze the time complexity of each operation in the algorithm",
+      "Calculate the total number of operations in the algorithm",
+      "Combine the time complexities of individual operations to get the overall time complexity using Big O notation",
+      "Justify the answer with proper reasoning"
+    ]
+  },
+  {
+    "question": "Analyze the time complexity of Dijkstra's Shortest Path Algorithm in a weighted, directed graph with n vertices and m edges. Assume that all operations (comparing two numbers, adding, subtracting, incrementing an index) take O(1).",
+    "ideal_answer": "Dijkstra's algorithm works by maintaining a priority queue of unvisited vertices sorted by their shortest distance from the source vertex. In each step, it dequeues the vertex with the smallest distance and marks it as visited. The time complexity for this operation is O(log n) due to the use of a priority queue. For updating the distances of neighboring unvisited vertices, the algorithm performs two operations: comparison (to check if the new distance is smaller than the current one) and addition (to update the distance). Since there are at most m edges for each vertex, the total time complexity for this operation is O(m * log n). The algorithm visits every vertex exactly once, so the time complexity for traversing the graph is O(n). Therefore, the overall time complexity of Dijkstra's Shortest Path Algorithm in a graph with n vertices and m edges is O((m + n) * log n).",
+    "rubric": [
+      "Identify the main operations performed by Dijkstra's algorithm (visiting vertices, updating distances, maintaining a priority queue)",
+      "Analyze the time complexity of each operation correctly",
+      "Calculate the total time complexity for each phase of the algorithm (traversing the graph, visiting each vertex, and updating distances)",
+      "Combine the time complexities of each phase to find the overall time complexity of the algorithm",
+      "Express the final answer in Big O notation"
+    ]
+  }
+]

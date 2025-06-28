@@ -1,0 +1,58 @@
+[
+  {
+    "question": "What are the primary advantages and disadvantages of using symmetric-key encipherment in secure communication, and how does it compare to other cryptographic techniques?",
+    "rubric": [
+      "The answer should clearly outline the main benefits of symmetric-key encipherment, such as speed and efficiency, and explain how these advantages make it suitable for certain applications.",
+      "The response should also discuss the primary drawbacks of symmetric-key encipherment, including key distribution and management challenges, and describe scenarios where these limitations become significant.",
+      "The answer should provide a comparison with other cryptographic techniques, such as asymmetric-key ciphers and hashing, highlighting the unique strengths and weaknesses of symmetric-key encipherment in relation to these alternatives. ",
+      "The response should demonstrate an understanding of the role of symmetric-key encipherment in achieving the first goal of security, as discussed in the context, and explain how it contributes to secure communication. ",
+      "The answer should include relevant examples or scenarios to illustrate the practical implications of using symmetric-key encipherment in real-world applications. "
+    ]
+  },
+  {
+    "question": "How does the reliance on a single secret key in symmetric-key encipherment impact the security and implementation of the system, particularly in terms of key management and potential vulnerabilities to attacks?",
+    "rubric": [
+      "The answer should explain the basic principle of symmetric-key encipherment, including the use of a single secret key for both encryption and decryption, and how this impacts the security of the system.",
+      "The response should discuss the challenges of key management in symmetric-key systems, including key distribution, storage, and revocation, and how these challenges can affect the overall security of the system.",
+      "The answer should also consider potential vulnerabilities to attacks, such as brute-force attacks or side-channel attacks, and how the use of a single secret key may exacerbate these vulnerabilities. ",
+      "The response should provide examples or scenarios to illustrate the impact of relying on a single secret key, such as the difficulty of securely sharing keys between parties or the consequences of a key compromise. ",
+      "The answer should evaluate the trade-offs between the benefits of symmetric-key encipherment (e.g., efficiency, simplicity) and the potential drawbacks (e.g., key management challenges, vulnerability to certain attacks). ",
+      "The response should demonstrate an understanding of the importance of key secrecy in symmetric-key encipherment and the potential consequences of key exposure or compromise. ",
+      "The answer should discuss the role of cryptographic techniques, such as key exchange protocols or public-key cryptography, in mitigating the risks associated with symmetric-key encipherment. ",
+      "The response should provide a clear and concise conclusion summarizing the main points and reiterating the importance of careful key management and security considerations in symmetric-key encipherment. "
+    ]
+  },
+  {
+    "question": "What are the primary advantages and potential drawbacks of using symmetric-key encipherment for secure communication, and how does it compare to other cryptographic techniques in terms of security and efficiency?",
+    "rubric": [
+      "The answer should clearly outline the primary advantages of symmetric-key encipherment, such as its efficiency and speed in encrypting and decrypting messages.",
+      "The response should also discuss the potential drawbacks, including the need for secure key exchange and management, and the vulnerability to certain types of attacks if the key is compromised.",
+      "The answer should provide a comparison with other cryptographic techniques, such as asymmetric-key ciphers and hashing, highlighting the trade-offs between security, efficiency, and complexity in different cryptographic approaches. ",
+      "The response should demonstrate an understanding of the role of symmetric-key encipherment in achieving the first goal of security, as discussed in the context, and its relevance to modern block and stream ciphers. ",
+      "The answer should be well-organized, concise, and free of technical errors, using proper terminology and concepts from the field of cryptography. ",
+      "The response should provide relevant examples or scenarios to illustrate the advantages and drawbacks of symmetric-key encipherment, and its applications in real-world secure communication systems. "
+    ]
+  },
+  {
+    "question": "How does the use of a single secret key in symmetric-key encipherment impact the security and efficiency of the encryption and decryption processes, and what are the implications of this for real-world applications?",
+    "rubric": [
+      "The answer should explain the basic principle of symmetric-key encipherment, including the use of a single secret key for both encryption and decryption, and how this affects the security of the communication.",
+      "The response should discuss the efficiency benefits of using a single key, such as faster encryption and decryption times, but also consider potential drawbacks, including key management issues and vulnerability to certain types of attacks.",
+      "The answer should provide examples or scenarios of real-world applications where symmetric-key encipherment is particularly suitable or challenging, highlighting the trade-offs between security, efficiency, and practicality in different contexts. ",
+      "The response should also touch upon the importance of key secrecy and distribution in symmetric-key systems, and how these factors can influence the overall security of the encryption process. ",
+      "The answer should demonstrate an understanding of the limitations and potential risks associated with symmetric-key encipherment, such as the risk of key compromise or the need for secure key exchange protocols. ",
+      "The answer should be well-structured, clearly written, and free of grammatical errors, with proper use of technical terms and concepts related to symmetric-key encipherment. "
+    ]
+  },
+  {
+    "question": "How does the use of a single secret key in symmetric-key encipherment impact the security and efficiency of the encryption and decryption processes, and what are the implications of this for practical applications?",
+    "rubric": [
+      "The answer should explain how the single secret key is used for both encryption and decryption in symmetric-key encipherment, highlighting the advantages and disadvantages of this approach.",
+      "The response should discuss the security implications of using a single secret key, including the potential risks of key compromise and the importance of key management.",
+      "The answer should also consider the efficiency implications of symmetric-key encipherment, including the speed of encryption and decryption, and how this impacts practical applications such as secure data transmission and storage. ",
+      "The answer should provide examples or scenarios where symmetric-key encipherment is particularly suitable or unsuitable, taking into account factors such as the level of security required, the computational resources available, and the nature of the data being protected. ",
+      "The response should demonstrate an understanding of the trade-offs between security, efficiency, and practicality in the context of symmetric-key encipherment. ",
+      "The answer should be well-structured, clearly written, and free of technical errors, with proper use of cryptographic terminology and concepts. "
+    ]
+  }
+]

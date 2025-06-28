@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What is the main difference between a synchronous and a nonsynchronous modern stream cipher in terms of key generation?",
+    "rubric": [
+      "The question clearly identifies the two categories of modern stream ciphers (synchronous and nonsynchronous) - 3 marks",
+      "A concise description of how each category generates its key stream is provided, highlighting their distinct approaches to key generation - 4 marks",
+      "An explanation of why synchronous and nonsynchronous stream ciphers have different requirements for secure key generation is included, demonstrating an understanding of the implications of each approach - 3 marks"
+    ],
+    "prompt_version": "v1_hyde_para_chunking"
+  },
+  {
+    "question": "What is the main difference between a synchronous and nonsynchronous modern stream cipher in terms of key generation?",
+    "rubric": [
+      "Clearly describes how key generation differs between synchronous and nonsynchronous stream ciphers - 3 marks",
+      "Provides a concise explanation of the implications of these differences on encryption and decryption processes - 4 marks",
+      "Identifies at least one advantage or disadvantage of each type of modern stream cipher in terms of key generation - 3 marks"
+    ],
+    "prompt_version": "v1_hyde_para_chunking"
+  },
+  {
+    "question": "What is the primary advantage of stream ciphers over block ciphers in terms of hardware implementation and transmission?",
+    "rubric": [
+      "The answer clearly states the main benefit of stream ciphers, specifically their ease of hardware implementation. (3 marks)",
+      "The response also mentions that stream ciphers are more immune to corruption of bits during transmission, demonstrating an understanding of their advantages. (4 marks)",
+      "The answer does not contain any incorrect or irrelevant information regarding the comparison between stream and block ciphers. (3 marks)"
+    ],
+    "prompt_version": "v1_hyde_para_chunking"
+  },
+  {
+    "question": "What are the primary differences between traditional stream ciphers and modern stream ciphers, in terms of their operational characteristics?",
+    "rubric": [
+      "Describe the difference in encryption/decryption process between traditional and modern stream ciphers (4 marks)",
+      "Explain how the key generation process differs between traditional and modern stream ciphers (3 marks)",
+      "Discuss the advantages of using modern stream ciphers over traditional stream ciphers, including speed and immunity to bit corruption (3 marks)"
+    ],
+    "prompt_version": "v1_hyde_para_chunking"
+  },
+  {
+    "question": "What is the primary advantage of using a stream cipher over a block cipher in terms of hardware implementation?",
+    "rubric": [
+      "The answer must identify the ease of hardware implementation as the primary advantage. (2 marks)",
+      "The answer should also mention that this is due to the fact that encryption and decryption are done one symbol at a time, making it easier to implement in hardware. (4 marks)",
+      "The answer may optionally mention that stream ciphers are faster than block ciphers and more immune to bit corruption during transmission as additional benefits. (4 marks)"
+    ],
+    "prompt_version": "v1_hyde_para_chunking"
+  }
+]

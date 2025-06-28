@@ -1,0 +1,28 @@
+[
+    {
+        "question": "Consider a system with multiple processes competing for shared resources. Each process has a unique priority level and requires exclusive access to the resource. Describe a scheduling algorithm that can efficiently allocate the resource while minimizing the average waiting time of all processes.",
+        "ideal_answer": "A suitable solution is the Rate Monotonic Scheduling (RMS) algorithm, which assigns higher priority to processes with shorter periods. This approach ensures that high-priority tasks are executed as soon as possible, thereby reducing the overall waiting time. Additionally, RMS takes into account the criticality and deadline of each process, allowing for more efficient resource allocation.",
+        "rubric": [
+            {
+                "criteria": "Algorithm Description",
+                "weightage": 30,
+                "description": "The candidate should clearly describe the scheduling algorithm and its underlying principles."
+            },
+            {
+                "criteria": "Resource Allocation",
+                "weightage": 25,
+                "description": "The candidate should demonstrate an understanding of how the algorithm allocates resources to competing processes."
+            },
+            {
+                "criteria": "Time Complexity",
+                "weightage": 20,
+                "description": "The candidate should discuss the time complexity of the algorithm and its implications on system performance."
+            },
+            {
+                "criteria": "Real-World Applicability",
+                "weightage": 25,
+                "description": "The candidate should provide examples or scenarios where the scheduling algorithm can be applied in real-world systems."
+            }
+        ]
+    }
+]

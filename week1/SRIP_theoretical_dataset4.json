@@ -1,0 +1,30 @@
+[
+  {
+    "question": "Consider the following recursive algorithm to find the maximum sum of a contiguous subarray in an array of integers.nnfunction maxSum(nums):n if len(nums) <= 1:n return nums[0]n else:n a = nums[0]n for i from 1 to len(nums)-1:n b = maxSum(nums[i+1:])n if a + b > nums[i]:n a = nums[i] n return (a + b)n",
+    "ideal_answer": "This algorithm is an example of a greedy algorithm. It works by selecting the maximum sum subarray from the unprocessed part of the array at each step.nnThe time complexity of this algorithm is O(n), where n is the length of the input array, as it performs one recursive call for each element in the array.",
+    "rubric": [
+      "[2 Marks] Explain how the greedy choice works in this algorithm.",
+      "[2 Marks] Identify the time complexity of the given algorithm.",
+      "[1 Mark] Provide a real-life example where this algorithm can be applied."
+    ]
+  },
+  {
+    "question": "Given an array of integers, find the maximum sum of any contiguous subarray.",
+    "ideal_answer": "To solve this problem, we can use a greedy algorithm. We start by selecting the maximum value in the array as the first element of our subarray. Then, for each subsequent element, we select the one that results in the maximum sum when added to the previous elements. This algorithm has a time complexity of O(n) and is correct in all cases.",
+    "rubric": [
+      "Criteria A [2 Marks] - Correctness of algorithm",
+      "Criteria B [1 Mark] - Brief explanation of greedy algorithm used",
+      "Criteria C [1 Mark] - Mention of time complexity",
+      "Criteria D [1 Mark] - Proper formatting and clarity of answer"
+    ]
+  },
+  {
+    "question": "Consider the following recursive algorithm to find the maximum sum of a contiguous subarray in an array of integers:nnfunction maxSum(nums):n if len(nums) <= 1:n return nums[0]n else:n m = maxSum(nums[2:])n if m + nums[0] > nums[1]:n return m + nums[0]n else:n return nums[1]n",
+    "ideal_answer": "The time complexity of this algorithm is O(n) because it makes one recursive call and a constant number of operations in the function body, which are both independent of the size of the input array.nnHowever, the space complexity is O(n) due to the recursion, as each recursive call requires a new stack frame that takes up additional memory.",
+    "rubric": [
+      "Criteria A [2 Marks] - Correctly identify the time complexity of the algorithm.",
+      "Criteria B [1 Mark] - Briefly explain why the space complexity is O(n).",
+      "Criteria C [2 Marks] - Provide a clear and concise explanation of how the algorithm works, including the role of recursive calls."
+    ]
+  }
+]

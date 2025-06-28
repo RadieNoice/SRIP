@@ -1,0 +1,23 @@
+[
+  {
+    "question": "Which of the following scheduling algorithms is based on the shortest remaining time first (SRTF) principle?",
+    "ideal_answer": "The Shortest Job First (SJF) scheduling algorithm is based on the SRTF principle.",
+    "rubric": [
+      "Criteria A [1 Mark] - Identification of the correct scheduling algorithm based on the SRTF principle.",
+      "Criteria B [2 Marks] - Explanation of how SJF works and its importance in preventing job starvation.",
+      "Criteria C [2 Marks] - Brief mention of the other two algorithms (Round Robin and Multilevel Feedback Queue) that are part of the question, explaining their differences from SJF."
+    ],
+    "student_variants": [
+      "The scheduling algorithm that is based on the shortest remaining time first (SRTF) principle is Round Robin (RR). In RR, each process is assigned a time slice or quantum and if the process does not complete its task within that time slice, it is moved to the end of the queue so that other processes can get a chance to execute. This ensures that the process with the shortest remaining time gets to execute next, thereby reducing the average waiting time for all processes.",
+      "The shortest remaining time first (SRTF) principle is used in the Round Robin scheduling algorithm.",
+      "The Round Robin scheduling algorithm is based on the shortest remaining time first (SRTF) principle. In this algorithm, each process is given a fixed time slice to execute and once its time slice is over, it gets scheduled again even if it's not completed its previous execution. The algorithm is called SRTF because it allocates CPU time in such a way that the process with the shortest remaining time gets executed first.",
+      "The shortest remaining time first (SRTF) scheduling algorithm is based on the principle of selecting the process with the least remaining burst time to execute next. This algorithm is used in the Round Robin scheduling policy and it's effective when processes have diverse burst times.",
+      "The scheduling algorithm based on the shortest remaining time first (SRTF) principle is called the Shortest Remaining Time First (SRTF) scheduler. It selects the process with the smallest remaining execution time for execution.",
+      "The scheduling algorithm that is based on the shortest remaining time first (SRTF) principle is Round Robin (RR). In RR, each process is given a fixed time quantum and the CPU is allocated to each process in turn, giving them equal priority. The scheduler selects the next process to run by looking at the remaining time of each process and selecting the one with the shortest remaining time.",
+      "I believe the scheduling algorithm based on the shortest remaining time first (SRTF) principle is called the Shortest Remaining Time First (SRTF) scheduling algorithm. It is used in real-time operating systems to manage tasks with deadlines and ensure that they are completed on time. The SRTF algorithm prioritizes tasks based on their remaining execution time, giving preference to tasks that have the shortest remaining execution time. This ensures that the system allocates resources to complete the tasks before their deadlines, preventing missed deadlines and ensuring the system's reliability and responsiveness.",
+      "The scheduling algorithm that is based on the shortest remaining time first (SRTF) principle is called Round-robin.",
+      "The scheduling algorithm based on the shortest remaining time first (SRTF) principle is the Shortest Remaining Time First (SRTF) scheduler.",
+      "* The scheduling algorithm that is based on the shortest remaining time first (SRTF) principle is called the Shortest Remaining Time First (SRTF) algorithm."
+    ]
+  }
+]

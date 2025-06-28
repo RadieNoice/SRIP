@@ -1,0 +1,49 @@
+[
+  {
+    "question": "What are the key differences between symmetric-key and asymmetric-key cryptography in terms of their underlying principles and applications?",
+    "rubric": [
+      "Clearly describe the fundamental principle behind symmetric-key cryptography, including its reliance on shared secrets. - 3 marks",
+      "Explain how asymmetric-key cryptography uses mathematical functions for encryption and decryption, highlighting its advantages over symmetric-key cryptography. - 4 marks",
+      "Discuss the specific security aspects that require the use of asymmetric-key cryptography, such as authentication and digital signatures. - 3 marks"
+    ],
+    "prompt_version": "v1_hyde"
+  },
+  {
+    "question": "What are the primary advantages and disadvantages of using symmetric-key cryptography compared to asymmetric-key cryptography?",
+    "rubric": [
+      "Clearly identifies at least two key benefits of symmetric-key cryptography, such as speed and efficiency in encipherment (2 marks)",
+      "Accurately describes a significant drawback of symmetric-key cryptography, like the need for shared secrets among users (3 marks)",
+      "Distinguishes between the primary applications of symmetric-key and asymmetric-key cryptography, including authentication and digital signatures (5 marks)"
+    ],
+    "prompt_version": "v1_hyde"
+  },
+  {
+    "question": "What are the primary advantages of using symmetric-key cryptography over asymmetric-key cryptography?",
+    "rubric": [
+      "Clearly identify at least two key benefits of symmetric-key cryptography, such as speed and efficiency in encipherment - 4",
+      "Explain why asymmetric-key cryptography is still necessary despite these advantages, mentioning specific applications or aspects of security that require it - 3",
+      "Provide a brief comparison between the underlying principles of symmetric-key and asymmetric-key cryptography, highlighting their differences - 2",
+      "Optionally, provide an example or scenario illustrating the trade-offs between using symmetric-key and asymmetric-key cryptography in practice - 1"
+    ],
+    "prompt_version": "v1_hyde"
+  },
+  {
+    "question": "What are the primary advantages of using symmetric-key cryptography over asymmetric-key cryptography?",
+    "rubric": [
+      "Clearly identify at least two key benefits of symmetric-key cryptography, such as speed and efficiency in encipherment. - 4",
+      "Explain why asymmetric-key cryptography is still necessary despite these advantages, mentioning specific applications like authentication and digital signatures. - 3",
+      "Provide a concise comparison between the underlying principles of symmetric-key (substitution and permutation) and asymmetric-key (mathematical functions) cryptography. - 3"
+    ],
+    "prompt_version": "v1_hyde"
+  },
+  {
+    "question": "What are the primary advantages of using symmetric-key cryptography over asymmetric-key cryptography?",
+    "rubric": [
+      "Clearly identifies at least two key benefits of symmetric-key cryptography, such as speed and efficiency - 4 marks",
+      "Accurately explains why symmetric-key cryptography is still needed for encipherment of large messages - 3 marks",
+      "Correctly distinguishes between the encryption methods used in symmetric-key and asymmetric-key cryptography - 2 marks",
+      "Optionally, provides a brief example or scenario illustrating the practical application of symmetric-key cryptography's advantages - 1 mark"
+    ],
+    "prompt_version": "v1_hyde"
+  }
+]

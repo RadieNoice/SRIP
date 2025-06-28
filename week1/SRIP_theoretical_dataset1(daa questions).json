@@ -1,0 +1,189 @@
+[
+  {
+    "question": "Design an algorithm to find the maximum subarray sum in an array of n integers.",
+    "ideal_answer": {
+      "approach": "Divide and conquer approach using the divide step to choose the starting index and the conquer step to merge the subarrays.",
+      "time_complexity": "O(n)"
+    },
+    "rubric": [
+      {
+        "criteria": "Correctly identifies the problem as finding the maximum subarray sum.",
+        "points": 1
+      },
+      {
+        "criteria": "Proposes a divide and conquer approach.",
+        "points": 1
+      },
+      {
+        "criteria": "Describes the divide step to choose the starting index.",
+        "points": 1
+      },
+      {
+        "criteria": "Describes the conquer step to merge the subarrays.",
+        "points": 1
+      },
+      {
+        "criteria": "Correctly states the time complexity as O(n).",
+        "points": 1
+      }
+    ]
+  },
+  {
+    "question": "Design an algorithm to find the minimum spanning tree of a connected, undirected graph with n vertices and m edges using Kruskal's algorithm.",
+    "ideal_answer": "1. Begin by sorting all edges in non-decreasing order of their weight.\n2. Initialize a set S to hold the vertices of the minimum spanning tree.\n3. Iterate through each edge e in the sorted list, excluding any edges that would create a cycle in the graph.\n4. If the weight of e is less than or equal to the sum of weights of all edges in S, add e to S and remove its corresponding vertices from the graph.\n5. Repeat step 3 until all vertices are included in S.\n6. The minimum spanning tree is formed by taking all edges in S and their corresponding vertices.",
+    "rubric": {
+      "Clarity of explanation": "The answer should provide a clear, step-by-step explanation of the algorithm.",
+      "Correctness of implementation": "The algorithm should correctly find the minimum spanning tree using Kruskal's algorithm.",
+      "Efficiency of solution": "The algorithm should have a time complexity of O(m log m) for finding the minimum spanning tree.",
+      "Formatting and organization": "The answer should be well-organized, with clear formatting and proper use of bullet points or numbering."
+    }
+  },
+  {
+    "question": "Design an algorithm to find the shortest path between two nodes in a weighted graph using Dijkstra's algorithm.",
+    "ideal_answer": "1. Explain how Dijkstra's algorithm works and its time complexity.\n2. Describe the steps involved in implementing Dijkstra's algorithm.\n3. Provide an example of how to use Dijkstra's algorithm to find the shortest path between two nodes in a weighted graph.",
+    "rubric": {
+      "Criteria 1": "Explanation of Dijkstra's algorithm and its time complexity is clear, accurate, and complete.",
+      "Criteria 2": "Steps involved in implementing Dijkstra's algorithm are clearly described and correct.",
+      "Criteria 3": "Example provided demonstrates the application of Dijkstra's algorithm to find the shortest path between two nodes in a weighted graph.",
+      "Criteria 4": "Answer is well-organized, concise, and easy to follow."
+    }
+  },
+  {
+    "question": "Design an algorithm to find the maximum subarray sum in an array of n integers.",
+    "ideal_answer": {
+      "description": "The algorithm uses a divide and conquer approach with a recursive function that takes two parameters: the starting index and the ending index of the subarray. The function calculates the sum of the subarray and recursively calls itself on the left and right halves of the subarray until it reaches a base case where the subarray has only one element, which is returned as the maximum subarray sum.",
+      "time_complexity": "O(n)",
+      "space_complexity": "O(log n)"
+    },
+    "rubric": [
+      {
+        "criteria": "The algorithm uses a divide and conquer approach with a recursive function that takes two parameters: the starting index and the ending index of the subarray.",
+        "weight": 0.3
+      },
+      {
+        "criteria": "The function calculates the sum of the subarray and recursively calls itself on the left and right halves of the subarray until it reaches a base case where the subarray has only one element, which is returned as the maximum subarray sum.",
+        "weight": 0.3
+      },
+      {
+        "criteria": "The algorithm has a time complexity of O(n)",
+        "weight": 0.2
+      },
+      {
+        "criteria": "The algorithm has a space complexity of O(log n)",
+        "weight": 0.2
+      }
+    ]
+  },
+  {
+    "question": "Consider the following problem: Given a list of integers, find the two numbers that add up to a given target value. Design an algorithm to solve this problem using the divide and conquer approach.",
+    "ideal_answer": {
+      "description": "The algorithm uses the divide and conquer approach by recursively dividing the input list into two halves until each half contains only one element. Then, it checks if the sum of these elements equals the target value. If not, it recursively calls itself on the other half of the list, and repeats this process until it finds the two numbers that add up to the target value.",
+      "time_complexity": "O(n log n)",
+      "space_complexity": "O(log n)"
+    },
+    "rubric": [
+      {
+        "criterion": "Correctness",
+        "description": "The algorithm must correctly find the two numbers that add up to the target value."
+      },
+      {
+        "criterion": "Completeness",
+        "description": "The algorithm must provide a complete solution to the problem, including base cases and recursive calls."
+      },
+      {
+        "criterion": "Time complexity analysis",
+        "description": "The algorithm's time complexity must be analyzed using Big O notation, and the answer must include the dominant term."
+      },
+      {
+        "criterion": "Space complexity analysis",
+        "description": "The algorithm's space complexity must be analyzed using Big O notation, and the answer must include the dominant term."
+      }
+    ]
+  },
+  {
+    "question": "Consider the following problem: Given a list of integers L, sort the list in ascending order and return the sorted list.\n\nWrite an algorithm to solve this problem with time complexity O(n log n) using divide and conquer approach.",
+    "ideal_answer": "The divide and conquer approach to solve this problem is as follows:\n\n1. Choose a pivot element from the list L.\n2. Partition L into two sub-lists, L1 and L2, such that all elements in L1 are less than or equal to the pivot element, and all elements in L2 are greater than or equal to the pivot element.\n3. Recursively sort L1 and L2 using the same algorithm.\n4. Combine the sorted sub-lists L1 and L2 to get the final sorted list.\n\nThe time complexity of this algorithm is O(n log n) because each recursive call takes O(log n) time, and there are n/2 recursive calls for a list of size n.",
+    "rubric": {
+      "Correctness": "The algorithm must correctly sort the input list in ascending order.",
+      "Time Complexity": "The algorithm must have a time complexity of O(n log n)",
+      "Precision": "The answer must be clear and concise, without ambiguity or confusion",
+      "Formatting": "The answer must be properly formatted using appropriate indentation and spacing",
+      "Language Proficiency": "The answer must demonstrate a high level of proficiency in the English language."
+    }
+  },
+  {
+    "question": "Design an algorithm to find the maximum subarray sum in an array of n integers.",
+    "ideal_answer": {
+      "description": "The algorithm uses a divide and conquer approach, where we recursively split the input array into two parts until we reach a base case. We keep track of the maximum sum found so far and update it whenever we find a larger subarray sum. The time complexity of this algorithm is O(n) as we perform a single pass through the input array.",
+      "steps": [
+        "Initialize two pointers, left and right, at the start of the array.",
+        "Set the maximum sum found so far to the sum of the first element in the array.",
+        "While there are elements to the left of the right pointer, do the following:\n\t* If the sum of the subarray from left to right is greater than the current maximum sum, update the maximum sum.",
+        "While there are elements to the right of the left pointer, do the following:\n\t* If the sum of the subarray from right to left is greater than the current maximum sum, update the maximum sum."
+      ]
+    },
+    "rubric": [
+      {
+        "criterion": "Correctness",
+        "description": "The algorithm correctly finds the maximum subarray sum in the input array."
+      },
+      {
+        "criterion": "Completeness",
+        "description": "The algorithm provides a complete solution, including base cases and recursion stops."
+      },
+      {
+        "criterion": "Understanding of divide and conquer approach",
+        "description": "The answer demonstrates an understanding of how the divide and conquer approach is used to solve the problem."
+      },
+      {
+        "criterion": "Time complexity analysis",
+        "description": "The answer correctly analyzes the time complexity of the algorithm as O(n)."
+      },
+      {
+        "criterion": "Asymptotic notation",
+        "description": "The answer uses asymptotic notation (O(n)) to describe the time complexity of the algorithm."
+      }
+    ]
+  },
+  {
+    "question": "Design an algorithm to find the shortest path between two nodes in a weighted graph using Dijkstra's algorithm.",
+    "ideal_answer": {
+      "description": "Dijkstra's algorithm is a greedy algorithm that uses a priority queue to find the shortest path between two nodes in a weighted graph. The algorithm maintains a list of unvisited nodes and visits the node with the smallest distance first. The algorithm iteratively updates the distances of each node until it finds the shortest path.",
+      "steps": [
+        "1. Initialize all nodes with infinite distance except for the starting node, which is set to 0.",
+        "2. Add the starting node to the priority queue.",
+        "3. While the priority queue is not empty:\n\t1. Remove the node with the smallest distance from the priority queue.\n\t2. If the current node is the destination node, return the path and exit the loop.\n\t3. For each neighbor of the current node:\n\t\t1. Calculate the distance between the current node and the neighbor.\n\t\t2. If the neighbor has not been visited or its distance is smaller than the current distance, update the distance and mark it as visited.\n\t3. Add the current node to the priority queue."
+      ]
+    },
+    "rubric": {
+      "description": "The ideal answer should include a clear description of Dijkstra's algorithm, its steps, and its time complexity analysis.",
+      "criteria": [
+        {
+          "description": "Correctly describes Dijkstra's algorithm."
+        },
+        {
+          "description": "Provides the correct steps of Dijkstra's algorithm."
+        },
+        {
+          "description": "Includes a time complexity analysis for Dijkstra's algorithm."
+        }
+      ]
+    }
+  },
+  {
+    "question": "Design an algorithm to find the shortest path between two nodes in a weighted, directed graph using Dijkstra's algorithm. Given the following graph: \n\n(A - B)\n | \n (B - C)\n | \n (C - D)\n | \n (D - E)\n | \n (E - F)\n\n\nWhere all edge weights are positive integers, and the source node is A. Write a pseudocode for the algorithm that satisfies the following criteria:\n1. The algorithm correctly identifies the shortest path from node A to node F.\n2. The algorithm uses a priority queue to store nodes in order of increasing distance from the source node.\n3. The algorithm terminates when all nodes have been processed or when the destination node has been found.",
+    "ideal_answer": "Here is an example pseudocode for Dijkstra's algorithm:\n\n1. Initialize a priority queue Q with all nodes in the graph, sorted by distance from the source node A.\n2. Set the distance of node A to 0 and add it to Q.\n3. While Q is not empty:\n4. Remove the node with the smallest distance from Q.\n5. If the removed node is the destination node F, terminate the algorithm.\n6. For each neighbor of the removed node, calculate the distance from the source node A through that neighbor.\n7. If this distance is smaller than the current distance of the neighbor, update the distance and add it to Q.\n8. Repeat steps 3-7 until all nodes have been processed or the destination node has been found.",
+    "rubric": "The algorithm should correctly identify the shortest path from node A to node F.\nThe algorithm should use a priority queue to store nodes in order of increasing distance from the source node.\nThe algorithm should terminate when all nodes have been processed or when the destination node has been found."
+  },
+  {
+    "question": "Design an algorithm to find the shortest path between two nodes in a weighted directed graph using Dijkstra's algorithm.",
+    "ideal_answer": "Dijkstra's algorithm is a greedy algorithm that uses a priority queue to find the shortest path between two nodes in a weighted directed graph. The algorithm maintains a list of unvisited nodes and visits the node with the smallest distance first. It iteratively marks visited nodes, updates distances, and selects the next node to visit until the destination node is reached. The time complexity of Dijkstra's algorithm is O(n + m), where n is the number of nodes and m is the number of edges.",
+    "rubric": {
+      "Criteria 1": "The algorithm correctly implements Dijkstra's algorithm for finding the shortest path between two nodes in a weighted directed graph.",
+      "Criteria 2": "The time complexity of the algorithm is correctly stated as O(n + m).",
+      "Criteria 3": "The answer includes a clear explanation of how Dijkstra's algorithm works and why it is effective for finding shortest paths in a weighted directed graph.",
+      "Criteria 4": "The answer demonstrates an understanding of the key concepts involved in Dijkstra's algorithm, such as priority queues and distance calculations.",
+      "Criteria 5": "The answer is well-organized and free of grammatical errors."
+    }
+  }
+]

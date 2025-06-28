@@ -1,0 +1,47 @@
+[
+  {
+    "question": "What are the key differences between symmetric-key and asymmetric-key ciphers in terms of their usage and security benefits?",
+    "rubric": [
+      "Definition and explanation of symmetric-key and asymmetric-key ciphers, including their encryption and decryption processes - 3 marks",
+      "Comparison of the security benefits of symmetric-key and asymmetric-key ciphers, including key exchange and authentication - 4 marks",
+      "Analysis of the usage scenarios for symmetric-key and asymmetric-key ciphers, including examples of when each is preferred - 3 marks"
+    ],
+    "prompt_version": "v3"
+  },
+  {
+    "question": "How does symmetric-key encipherment ensure the confidentiality of messages transmitted over an insecure channel, considering the role of encryption and decryption algorithms and the use of a shared secret key?",
+    "rubric": [
+      "A clear explanation of the encryption and decryption process using symmetric-key encipherment, including the role of the shared secret key - 3 marks",
+      "A description of how the use of symmetric-key encipherment prevents an adversary from understanding the contents of the message, including the limitations of eavesdropping - 4 marks",
+      "An analysis of the importance of keeping the shared secret key confidential to maintain the security of the symmetric-key encipherment technique - 3 marks"
+    ],
+    "prompt_version": "v3"
+  },
+  {
+    "question": "What are the primary advantages and limitations of using symmetric-key cryptography for secure communication, and how does it compare to other cryptographic techniques?",
+    "rubric": [
+      "A clear explanation of the primary advantages of symmetric-key cryptography, including its speed and efficiency, as well as its widespread use and acceptance - 3 marks",
+      "A detailed discussion of the limitations of symmetric-key cryptography, including key management and distribution issues, as well as its vulnerability to certain types of attacks - 4 marks",
+      "A comparison of symmetric-key cryptography with other cryptographic techniques, such as asymmetric-key cryptography and hashing, highlighting their respective strengths and weaknesses - 3 marks"
+    ],
+    "prompt_version": "v3"
+  },
+  {
+    "question": "What are the primary advantages and limitations of using symmetric-key cryptography for secure communication?",
+    "rubric": [
+      "Definition and explanation of symmetric-key cryptography, including its basic principles and the use of a single secret key for both encryption and decryption - 3 marks",
+      "Discussion of the primary advantages of symmetric-key cryptography, such as speed and efficiency, and its widespread use in modern communication systems - 3 marks",
+      "Analysis of the limitations of symmetric-key cryptography, including key exchange and management issues, and potential vulnerabilities to certain types of attacks - 4 marks"
+    ],
+    "prompt_version": "v3"
+  },
+  {
+    "question": "What are the key differences between symmetric-key and asymmetric-key ciphers in terms of their usage and security implications?",
+    "rubric": [
+      "A clear definition of symmetric-key and asymmetric-key ciphers, explaining how they use keys for encryption and decryption - 3 marks",
+      "A comparison of the two types of ciphers in terms of their usage, including scenarios where each is preferred - 4 marks",
+      "An explanation of the security implications of using symmetric-key versus asymmetric-key ciphers, including potential vulnerabilities and advantages - 3 marks"
+    ],
+    "prompt_version": "v3"
+  }
+]

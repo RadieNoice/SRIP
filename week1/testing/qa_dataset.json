@@ -1,0 +1,194 @@
+[
+    {
+        "question": "Consider a computer system with a single CPU and two processes, A and B, each having the same priority. Process A is in the running state, while process B is blocked waiting for I/O completion. The operating system uses a Round-Robin scheduling algorithm with a time quantum of 10 units. If the current time is 25 units, what is the expected behavior of the system regarding context switching and process scheduling?",
+        "ideal_answer": "The operating system will perform a context switch to schedule process B into the running state after the completion of its I/O operation. However, due to the Round-Robin algorithm's fixed time quantum, it is likely that process A will still be executed for another 5 units before giving up control and allowing process B to execute.",
+        "rubric": [
+            {
+                "criteria": "Correct identification of context switching in a preemptive scheduling scenario",
+                "weightage": 30,
+                "description": "Does the student correctly identify that a context switch will occur when process B is scheduled into the running state?"
+            },
+            {
+                "criteria": "Understanding of the implications of Round-Robin scheduling with a fixed time quantum",
+                "weightage": 40,
+                "description": "Does the student demonstrate an understanding of how the Round-Robin algorithm's time quantum affects the execution order and context switching in this scenario?"
+            },
+            {
+                "criteria": "Clear explanation of expected behavior regarding process scheduling",
+                "weightage": 30,
+                "description": "Is the student's answer clear, concise, and accurately describes the expected behavior of the system under the given conditions?"
+            }
+        ]
+    },
+    {
+        "question": "Consider a multi-level page table implementation in a virtual memory system. If the number of levels is L and each level has N entries, what is the maximum amount of memory required to store the page tables? Assume that each entry requires 4 bytes.",
+        "ideal_answer": "The maximum amount of memory required to store the page tables is (L + 1) * N * 4 bytes. This is because each level of the page table has N entries, and there are L levels, so we need to account for all the levels in the calculation. Additionally, we need to include the root directory which requires an extra level.",
+        "rubric": [
+            {
+                "id": "1",
+                "description": "The student correctly identifies the formula for calculating the maximum amount of memory required to store the page tables."
+            },
+            {
+                "id": "2",
+                "description": "The student provides a clear and concise explanation of why the formula accounts for all levels in the page table, including the root directory."
+            },
+            {
+                "id": "3",
+                "description": "The student correctly applies the given assumptions (e.g. each entry requires 4 bytes) to derive the formula."
+            }
+        ]
+    },
+    {
+        "question": "Consider a system with multiple processes competing for shared resources. Describe the key characteristics of a starvation-free scheduling algorithm and explain how it can be achieved using process isolation mechanisms.",
+        "ideal_answer": "A starvation-free scheduling algorithm prioritizes tasks based on their resource requirements, ensuring that each task receives sufficient resources to complete within a reasonable time frame. This is achieved through dynamic priority allocation, where the priority of each task is adjusted in real-time based on its current resource usage and estimated completion time. Process isolation mechanisms, such as memory protection and virtualization, prevent tasks from interfering with one another's resource allocation, thereby preventing starvation.",
+        "rubric": [
+            {
+                "criteria": "Clearly describes the key characteristics of a starvation-free scheduling algorithm",
+                "weighting": 30,
+                "description": "The answer should accurately identify the key characteristics of a starvation-free scheduling algorithm and explain how it prevents starvation."
+            },
+            {
+                "criteria": "Explains the role of process isolation mechanisms in preventing starvation",
+                "weighting": 25,
+                "description": "The answer should describe how process isolation mechanisms, such as memory protection and virtualization, prevent tasks from interfering with one another's resource allocation and thereby prevent starvation."
+            },
+            {
+                "criteria": "Provides a clear example or scenario to illustrate the concept",
+                "weighting": 20,
+                "description": "The answer should provide a concrete example or scenario that demonstrates how a starvation-free scheduling algorithm can be implemented using process isolation mechanisms."
+            },
+            {
+                "criteria": "Uses technical vocabulary and concepts accurately",
+                "weighting": 25,
+                "description": "The answer should demonstrate a clear understanding of relevant technical terms and concepts, such as dynamic priority allocation, memory protection, and virtualization."
+            }
+        ]
+    },
+    {
+        "question": "Consider a system with two processes, P1 and P2, that share the same resource R. The scheduling policy is First-Come-First-Served (FCFS). Process P1 arrives at time t=0 and requests access to resource R for a duration of 3 time units. At time t=1, process P2 arrives and also requests access to resource R for a duration of 4 time units. If the system is currently idle when P2 arrives, what is the maximum length of time that P2 will have to wait before being granted access to resource R?",
+        "ideal_answer": "3",
+        "rubric": [
+            {
+                "id": "1",
+                "criteria": "The student must identify that P1 has already requested and been allocated the resource for a duration of 3 time units.",
+                "marks": "2"
+            },
+            {
+                "id": "2",
+                "criteria": "The student must correctly apply the FCFS scheduling policy to determine when P2 will be granted access to the resource.",
+                "marks": "4"
+            },
+            {
+                "id": "3",
+                "criteria": "The student must calculate and provide the maximum length of time that P2 will have to wait before being granted access to resource R.",
+                "marks": "6"
+            }
+        ]
+    },
+    {
+        "question": "Consider a file system with multiple processes accessing shared files. Describe the trade-offs between using a First-Come-First-Served (FCFS) disk scheduling algorithm and a Scan (SST) disk scheduling algorithm in terms of starvation prevention and throughput.",
+        "ideal_answer": "In FCFS, starvation prevention is ensured as each process gets the disk after completion of its previous access, but this leads to low throughput due to sequential accesses. In SST, high throughput is achieved by scanning the disk for contiguous blocks, but there is a risk of starvation if one process consistently accesses non-contiguous blocks.",
+        "rubric": [
+            {
+                "criteria": "Explain the FCFS algorithm's approach to disk scheduling.",
+                "max_points": 3
+            },
+            {
+                "criteria": "Describe the SST algorithm's approach to disk scheduling and its advantages/disadvantages.",
+                "max_points": 4
+            },
+            {
+                "criteria": "Compare and contrast the two algorithms in terms of starvation prevention and throughput, providing a clear explanation of trade-offs.",
+                "max_points": 5
+            },
+            {
+                "criteria": "Provide relevant examples or scenarios to support their analysis.",
+                "max_points": 3
+            }
+        ]
+    },
+    {
+        "question": "A process in a timesharing system is allocated a fixed amount of CPU time during each time slice. If the process requires more than one time slice to complete its current task, it will be preempted and resume execution at the beginning of the next time slice. What type of scheduling algorithm is this example illustrating?",
+        "ideal_answer": "Round Robin Scheduling",
+        "rubric": [
+            {
+                "name": "Identification of scheduling algorithm type",
+                "criteria": "The answer correctly identifies the type of scheduling algorithm (e.g., Round Robin, First-Come-First-Served, Priority Scheduling).",
+                "weightage": 3
+            },
+            {
+                "name": "Understanding of time slicing and preemption",
+                "criteria": "The answer demonstrates an understanding of how time slices are allocated and preempted in the context of Round Robin Scheduling.",
+                "weightage": 2
+            },
+            {
+                "name": "Relevance to operating system concepts",
+                "criteria": "The answer shows awareness of how scheduling algorithms like Round Robin Scheduling are implemented in operating systems, particularly in relation to process management and CPU allocation.",
+                "weightage": 1
+            }
+        ]
+    },
+    {
+        "question": "Consider a paging system with a page size of 4 KB and a physical memory size of 64 MB (65,536 pages). If the operating system uses a Least Recently Used (LRU) replacement policy, what is the minimum number of page faults that will occur when accessing the following sequence of page references: page 1, page 2, page 3, ..., page 65,536?",
+        "ideal_answer": "0",
+        "rubric": [
+            {
+                "criteria": "Understanding of LRU replacement policy",
+                "description": "The candidate should demonstrate a clear understanding of the LRU policy and its implications on page faults.",
+                "marks": "2"
+            },
+            {
+                "criteria": "Analysis of access sequence",
+                "description": "The candidate should analyze the given sequence of page references to determine the minimum number of page faults that will occur.",
+                "marks": "3"
+            },
+            {
+                "criteria": "Calculation and justification of result",
+                "description": "The candidate should clearly calculate and justify their answer, demonstrating an understanding of how the LRU policy minimizes page faults in this specific scenario.",
+                "marks": "4"
+            }
+        ]
+    },
+    {
+        "question": "Consider a system with two processes, P1 and P2, competing for access to a shared resource. Both processes are implemented as preemptive priority scheduling algorithms using the Rate Monotonic Scheduling (RMS) algorithm. Process P1 has a higher priority than process P2. The system is experiencing starvation due to the continuous preemption of process P2 by process P1. Explain why this scenario might occur and discuss possible solutions.",
+        "ideal_answer": "The scenario occurs because RMS prioritizes tasks based on their periods (i.e., the time between successive executions). In this case, if process P1's period is shorter than process P2's, P1 will preempt P2 continuously. To mitigate this issue, one solution could be to assign a longer period to process P2 or to implement a mechanism that ensures fairness in task execution (e.g., through the use of time slices).",
+        "rubric": [
+            {
+                "criteria": "Clear explanation of RMS algorithm and its potential pitfalls.",
+                "marks": 20,
+                "description": "Explanation should include a concise description of how RMS prioritizes tasks based on their periods."
+            },
+            {
+                "criteria": "Analysis of the scenario and identification of starvation as an issue.",
+                "marks": 30,
+                "description": "The response should clearly state why the continuous preemption is causing starvation in process P2."
+            },
+            {
+                "criteria": "Suggested solutions for mitigating starvation.",
+                "marks": 40,
+                "description": "Response should propose at least one feasible solution to address the starvation issue, possibly including a brief justification or reasoning."
+            }
+        ]
+    },
+    {
+        "question": "Consider a system with two processes, A and B, both competing for access to a shared resource. Process A has a priority of 2 and process B has a priority of 1. The operating system uses a Round-Robin scheduling algorithm with a time quantum of 5 time units. If the current time is at the start of a new cycle, what is the maximum number of time units that will be allocated to process A before process B gets a chance to run?",
+        "ideal_answer": "15",
+        "rubric": [
+            {
+                "id": "1",
+                "description": "The answer correctly identifies the scheduling algorithm used by the operating system.",
+                "weightage": "20"
+            },
+            {
+                "id": "2",
+                "description": "The answer accurately determines the maximum number of time units that will be allocated to process A before process B gets a chance to run, taking into account the Round-Robin scheduling algorithm and the given time quantum.",
+                "weightage": "60"
+            },
+            {
+                "id": "3",
+                "description": "The answer provides a clear explanation of its reasoning for determining the maximum number of time units allocated to process A, demonstrating an understanding of the underlying principles of Round-Robin scheduling.",
+                "weightage": "20"
+            }
+        ]
+    }
+]

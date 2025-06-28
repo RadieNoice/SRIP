@@ -1,0 +1,48 @@
+[
+  {
+    "question": "What type of cryptanalytic attack did John launch to decipher the ciphertext \"CIW\" into the plaintext \"yes\", and what can be inferred about the cryptographic technique used?",
+    "rubric": [
+      "The correct identification of the attack type (shift cipher) and its characteristics - 3 marks",
+      "A clear explanation of how the shift value was determined from the given paragraphs - 4 marks",
+      "Accurate decryption of the ciphertext \"XVIEWVWI\" using the same shift value, yielding the plaintext - 3 marks"
+    ],
+    "prompt_version": "v3_hyde_para_chunking_k_per_q_4num_hyde_qs_5"
+  },
+  {
+    "question": "Describe the primary difference between a Vigenere cipher and an Autokey cipher in terms of their key generation mechanisms.",
+    "rubric": [
+      "Clearly defines the key generation process for both ciphers - 3 marks",
+      "Explains how the key is generated for the Vigenere cipher - 2 marks",
+      "Accurately describes the unique characteristic of the Autokey cipher's key generation, specifically its incorporation of plaintext - 4 marks",
+      "Demonstrates an understanding of how these differences impact encryption and decryption processes - 1 mark"
+    ],
+    "prompt_version": "v3_hyde_para_chunking_k_per_q_4num_hyde_qs_5"
+  },
+  {
+    "question": "Explain the fundamental difference between a Vigenere cipher and an Autokey cipher in terms of key management.",
+    "rubric": [
+      "Clearly define the key characteristics of each cipher (Vigenere and Autokey) - 3 marks",
+      "Describe how the key is managed in each cipher, including any relevant key updates or refreshes - 4 marks",
+      "Provide a concise example to illustrate the difference between the two ciphers in terms of key management - 3 marks"
+    ],
+    "prompt_version": "v3_hyde_para_chunking_k_per_q_4num_hyde_qs_5"
+  },
+  {
+    "question": "Describe the primary characteristics of a Vigenere cipher and explain how it differs from other polyalphabetic substitution ciphers, such as the Hill cipher.",
+    "rubric": [
+      "Clearly identify the type of cipher used in Figure 3.14 (Vigenere) and explain its working principle. - 3 marks",
+      "Distinguish between additive and multiplicative ciphers, providing an example that illustrates their difference. - 4 marks",
+      "Explain how the Vigenere tableau is constructed and describe its significance in deciphering the ciphertext. - 3 marks"
+    ],
+    "prompt_version": "v3_hyde_para_chunking_k_per_q_4num_hyde_qs_5"
+  },
+  {
+    "question": "Describe the key characteristics and limitations of a Vigenere cipher, considering its implementation as a combination of multiple additive ciphers.",
+    "rubric": [
+      "Clearly outline the method for generating the Vigenere tableau - 3 marks",
+      "Explain how the keyword is used to select letters from different columns in the tableau - 4 marks",
+      "Discuss one common limitation or weakness of the Vigenere cipher, such as periodicity or key recovery attacks - 3 marks"
+    ],
+    "prompt_version": "v3_hyde_para_chunking_k_per_q_4num_hyde_qs_5"
+  }
+]

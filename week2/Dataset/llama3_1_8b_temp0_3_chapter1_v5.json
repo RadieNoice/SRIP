@@ -1,0 +1,48 @@
+[
+  {
+    "question": "What is the primary characteristic that differentiates symmetric-key encipherment from other cryptographic techniques?",
+    "rubric": [
+      "The answer clearly identifies the single secret key used for both encryption and decryption in symmetric-key encipherment - 3 marks",
+      "The response explains how this characteristic ensures secure communication over an insecure channel - 4 marks",
+      "The answer provides a concise example of how Alice and Bob use the shared secret key to encrypt and decrypt messages, respectively - 3 marks"
+    ],
+    "prompt_version": "v5"
+  },
+  {
+    "question": "What is the primary characteristic that distinguishes symmetric-key encipherment from other cryptographic techniques?",
+    "rubric": [
+      "The question clearly identifies the key feature of symmetric-key encipherment - 3 marks",
+      "A brief explanation of how this characteristic enables secure communication over an insecure channel is provided, including the use of a single secret key for both encryption and decryption. - 4 marks",
+      "An example illustrating the application of symmetric-key encipherment in practice (e.g., Alice and Bob exchanging messages) is included to demonstrate its practical implementation. - 3 marks"
+    ],
+    "prompt_version": "v5"
+  },
+  {
+    "question": "What is the primary characteristic that distinguishes symmetric-key encipherment from other cryptographic techniques?",
+    "rubric": [
+      "The answer clearly defines what symmetric-key encipherment is - 2 marks",
+      "The response identifies a key feature of symmetric-key encipherment, such as using a single secret key for both encryption and decryption - 4 marks",
+      "The explanation demonstrates an understanding of how this characteristic enables secure communication over insecure channels - 3 marks"
+    ],
+    "prompt_version": "v5"
+  },
+  {
+    "question": "What is the primary characteristic that distinguishes symmetric-key encipherment from asymmetric-key encipherment?",
+    "rubric": [
+      "The correct identification of the key feature of symmetric-key encipherment, such as shared secret key or encryption/decryption process - 4",
+      "A clear explanation of how this characteristic enables secure communication over an insecure channel - 3",
+      "An accurate comparison with asymmetric-key encipherment to highlight the difference - 2",
+      "A brief description of a real-world application or scenario where symmetric-key encipherment is used - 1"
+    ],
+    "prompt_version": "v5"
+  },
+  {
+    "question": "What is the primary characteristic that differentiates symmetric-key encipherment from other cryptographic techniques, and how does it facilitate secure communication over an insecure channel?",
+    "rubric": [
+      "The question clearly identifies the key feature of symmetric-key encipherment - 3 marks",
+      "A brief explanation of how this feature enables secure communication is provided, including a mention of encryption and decryption using a single secret key. - 4 marks",
+      "An example or analogy (such as the \"electronic locking\" concept) that illustrates the use of a shared secret key for both encryption and decryption is included in the answer. - 3 marks"
+    ],
+    "prompt_version": "v5"
+  }
+]
