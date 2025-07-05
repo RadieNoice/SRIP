@@ -1,0 +1,217 @@
+[
+  {
+    "question_number": 1,
+    "question": "**  Compare and contrast the characteristics of embedded software, product-line software, web applications, and artificial intelligence software, providing specific examples from the provided text and illustrating how their development processes might differ.  Consider the scale of development effort and the types of challenges each category presents.\n\n**",
+    "rubric": [
+      {
+        "criterion": "Conceptual Understanding of Software Categories",
+        "description": "Correctly identifies and differentiates the four software categories",
+        "marks": 2
+      },
+      {
+        "criterion": "Comparative Analysis",
+        "description": "Provides a clear comparison and contrast of the characteristics, highlighting key similarities and differences",
+        "marks": 3
+      },
+      {
+        "criterion": "Application of Concepts",
+        "description": "Applies the understanding to explain how development processes might vary based on the nature of each software type",
+        "marks": 3
+      },
+      {
+        "criterion": "Clarity and Organization",
+        "description": "Presents the comparison in a clear, logical, and well-organized manner",
+        "marks": 2
+      }
+    ]
+  },
+  {
+    "question_number": 2,
+    "question": "** The text mentions that \"Software is engineered, not manufactured.\"  Elaborate on this statement, contrasting the software development process with a traditional manufacturing process.  Discuss the implications of this difference for software project management, quality assurance, and cost estimation.\n\n**",
+    "rubric": [
+      {
+        "criterion": "Understanding of the \"Engineering vs. Manufacturing\" Distinction",
+        "description": "Clearly explains the fundamental difference between engineering and manufacturing in the context of software",
+        "marks": 3
+      },
+      {
+        "criterion": "Comparative Analysis",
+        "description": "Provides a detailed comparison of software development and a traditional manufacturing process, highlighting key differences in approach, methodology, and challenges",
+        "marks": 4
+      },
+      {
+        "criterion": "Implications for Project Management",
+        "description": "Discusses the implications of this difference for software project management, quality assurance, and cost estimation",
+        "marks": 3
+      }
+    ]
+  },
+  {
+    "question_number": 3,
+    "question": "** Analyze the three software myths presented in the text. For each myth, explain why it's considered a myth and describe the reality that contradicts it.  Discuss the potential consequences of believing these myths in a software development project.\n\n**",
+    "rubric": [
+      {
+        "criterion": "Identification and Explanation of Myths",
+        "description": "Correctly identifies and explains each of the three myths",
+        "marks": 3
+      },
+      {
+        "criterion": "Analysis of Realities",
+        "description": "Accurately describes the reality that contradicts each myth",
+        "marks": 3
+      },
+      {
+        "criterion": "Consequences of Believing Myths",
+        "description": "Discusses the potential negative consequences of believing these myths in a software development project",
+        "marks": 4
+      }
+    ]
+  },
+  {
+    "question_number": 4,
+    "question": "**  Based on the provided text, discuss the evolution of web applications (\"WebApps\").  Describe the shift from simple linked hypertext files to sophisticated computing environments integrated with corporate databases and business applications.  What factors have driven this evolution?\n\n**",
+    "rubric": [
+      {
+        "criterion": "Description of WebApp Evolution",
+        "description": "Clearly describes the evolution of WebApps from simple to sophisticated systems",
+        "marks": 3
+      },
+      {
+        "criterion": "Identification of Driving Factors",
+        "description": "Identifies and explains the key factors driving this evolution",
+        "marks": 3
+      },
+      {
+        "criterion": "Analysis of Impact",
+        "description": "Analyzes the impact of this evolution on software development, user experience, and business applications",
+        "marks": 4
+      }
+    ]
+  },
+  {
+    "question_number": 5,
+    "question": "** The text highlights the concentration of software costs in engineering.  Explain why this is the case, contrasting it with the cost distribution in a traditional manufacturing process.  What strategies can be employed to manage and mitigate these costs effectively during software development?\n\n**",
+    "rubric": [
+      {
+        "criterion": "Explanation of Cost Concentration",
+        "description": "Clearly explains why software costs are concentrated in engineering",
+        "marks": 3
+      },
+      {
+        "criterion": "Comparison with Manufacturing",
+        "description": "Contrasts this with cost distribution in traditional manufacturing",
+        "marks": 2
+      },
+      {
+        "criterion": "Cost Mitigation Strategies",
+        "description": "Suggests effective strategies for managing and mitigating software development costs",
+        "marks": 5
+      }
+    ]
+  },
+  {
+    "question_number": 6,
+    "question": "**  Critically evaluate the statement: \"We have yet to develop a software technology that does it all, and the likelihood of one arising in the future is small.\"  Support your evaluation with arguments based on the nature of software and the diverse application domains it addresses.\n\n**",
+    "rubric": [
+      {
+        "criterion": "Critical Evaluation of the Statement",
+        "description": "Provides a thorough and well-reasoned evaluation of the statement",
+        "marks": 3
+      },
+      {
+        "criterion": "Supporting Arguments",
+        "description": "Presents strong arguments based on the nature of software and its diverse applications",
+        "marks": 4
+      },
+      {
+        "criterion": "Clarity and Coherence",
+        "description": "Presents the evaluation and arguments in a clear, coherent, and well-organized manner",
+        "marks": 3
+      }
+    ]
+  },
+  {
+    "question_number": 7,
+    "question": "**  Explain how the concept of \"software engineering\" differs from simply \"writing code\".  Discuss the various aspects of software engineering that go beyond coding, and why these aspects are crucial for successful software development.\n\n**",
+    "rubric": [
+      {
+        "criterion": "Distinction between Software Engineering and Coding",
+        "description": "Clearly distinguishes between software engineering and simply writing code",
+        "marks": 2
+      },
+      {
+        "criterion": "Aspects Beyond Coding",
+        "description": "Identifies and explains various aspects of software engineering that extend beyond coding",
+        "marks": 4
+      },
+      {
+        "criterion": "Importance of these Aspects",
+        "description": "Explains why these aspects are crucial for successful software development",
+        "marks": 4
+      }
+    ]
+  },
+  {
+    "question_number": 8,
+    "question": "**  Discuss the challenges of developing artificial intelligence software compared to other software categories mentioned in the text.  Consider factors such as problem complexity, algorithm design, and testing methodologies.\n\n**",
+    "rubric": [
+      {
+        "criterion": "Challenges of AI Software Development",
+        "description": "Identifies and explains the unique challenges of developing AI software",
+        "marks": 4
+      },
+      {
+        "criterion": "Comparison with Other Categories",
+        "description": "Compares these challenges with those encountered in developing other software categories",
+        "marks": 3
+      },
+      {
+        "criterion": "Discussion of Solutions",
+        "description": "Suggests potential approaches or solutions to address these challenges",
+        "marks": 3
+      }
+    ]
+  },
+  {
+    "question_number": 9,
+    "question": "**  Imagine you are tasked with developing a new software product.  Based on the information provided, how would you choose the appropriate software category (embedded, product-line, web application, or AI) for your product?  Explain your decision-making process with a hypothetical example.\n\n**",
+    "rubric": [
+      {
+        "criterion": "Understanding of Software Categories",
+        "description": "Demonstrates a clear understanding of the characteristics of each software category",
+        "marks": 2
+      },
+      {
+        "criterion": "Decision-Making Process",
+        "description": "Clearly outlines the decision-making process for choosing the appropriate category",
+        "marks": 3
+      },
+      {
+        "criterion": "Hypothetical Example",
+        "description": "Provides a well-defined hypothetical example and justifies the chosen category",
+        "marks": 5
+      }
+    ]
+  },
+  {
+    "question_number": 10,
+    "question": "**  Reflect on the evolution of software development practices over time.  How have the challenges and approaches to software development changed from the \"art form\" days to the modern software engineering practices emphasized in the text?\n\n**",
+    "rubric": [
+      {
+        "criterion": "Historical Context",
+        "description": "Provides a brief overview of the historical evolution of software development practices",
+        "marks": 2
+      },
+      {
+        "criterion": "Comparison of Approaches",
+        "description": "Compares and contrasts the \"art form\" approach with modern software engineering practices",
+        "marks": 4
+      },
+      {
+        "criterion": "Analysis of Changes",
+        "description": "Analyzes the reasons behind the changes in approaches and challenges",
+        "marks": 4
+      }
+    ]
+  }
+]
