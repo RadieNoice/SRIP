@@ -1,0 +1,213 @@
+================================================================================
+APPENDIX C – TOOLS AND FRAMEWORK REFERENCES
+Development and Evaluation of RAG-Enhanced Question Generation System 
+for Educational Assessment
+================================================================================
+
+Font: Times New Roman, 12 pt, 1.5 spacing, Justified
+
+
+C.1 CORE FRAMEWORKS
+================================================================================
+
+LangChain (v0.1+)
+Purpose: LLM application orchestration, chain management, prompt templating
+Documentation: https://python.langchain.com/docs/
+Components Used: LLMChain, PromptTemplate, ChatModels, Document Loaders
+
+LangChain Community
+Purpose: Community-contributed integrations (Ollama, ChromaDB, FAISS)
+Components Used: ChatOllama, UnstructuredPDFLoader, Chroma, FAISS
+
+
+C.2 LARGE LANGUAGE MODELS
+================================================================================
+
+Llama 3.1 8B & Llama 3.3 70B (Meta AI)
+Architecture: Decoder-only transformer
+Parameters: 8 billion / 70 billion
+Context Window: 8K tokens (8B), 128K tokens (70B)
+Deployment: Ollama (local), Together AI (cloud)
+Use Case: Question generation with rubrics
+Documentation: https://ai.meta.com/llama/
+
+DeepSeek-R1 Distill Llama 70B
+Architecture: Reasoning-enhanced LLM
+Parameters: 8B / 70B variants
+Strengths: Strong reasoning, structured outputs
+Deployment: Together AI, LM Studio
+Use Case: Student answer evaluation
+Documentation: https://huggingface.co/deepseek-ai
+
+Mistral 7B (Mistral AI)
+Architecture: Sparse mixture-of-experts transformer
+Parameters: 7 billion
+Context Window: 32K tokens
+Deployment: Ollama (local)
+Use Case: Evaluation and question generation
+Documentation: https://mistral.ai/
+
+
+C.3 EMBEDDING MODELS
+================================================================================
+
+all-MiniLM-L6-v2 (HuggingFace)
+Dimensions: 384
+Model Size: 80MB
+Speed: ~2000 sentences/second
+Use Case: Primary embedding model for FAISS
+Source: sentence-transformers library
+
+Qwen3-Embedding-0.6B (Alibaba Cloud)
+Dimensions: 768
+Parameters: 0.6 billion
+Performance: Higher accuracy than MiniLM
+Use Case: Advanced semantic chunking with ChromaDB
+Source: HuggingFace Model Hub
+
+
+C.4 VECTOR DATABASES
+================================================================================
+
+FAISS (Facebook AI Similarity Search)
+Type: In-memory vector database
+Algorithm: Approximate nearest neighbors (ANN)
+Strengths: Extremely fast, efficient for local storage
+Limitations: In-memory only, no advanced filtering
+Use Case: Primary retrieval for question generation
+
+ChromaDB (v0.4+)
+Type: Persistent vector database
+Features: Metadata filtering, persistent storage, SQLite backend
+Strengths: Easy persistence, good for iterative development
+Use Case: Semantic chunking experiments, Qwen embeddings
+
+
+C.5 DEPLOYMENT PLATFORMS
+================================================================================
+
+Ollama (v0.1+)
+Purpose: Local LLM deployment and inference
+Models Supported: Llama, Mistral, CodeLlama, others
+Installation: Command-line interface
+API: OpenAI-compatible REST API on localhost:11434
+Benefits: Free, privacy-preserving, offline capable
+
+Together AI
+Purpose: Cloud-based LLM inference
+Models Supported: Llama 70B, DeepSeek-R1, others
+API: REST API with Python SDK
+Pricing: Pay-per-token
+Benefits: Access to large models without local hardware
+
+LM Studio
+Purpose: Local LLM server with GUI
+Features: Model management, OpenAI-compatible API
+Endpoint: http://localhost:1234/v1
+Benefits: Easy setup, visual interface, no API costs
+
+
+C.6 DEVELOPMENT TOOLS
+================================================================================
+
+Python 3.10+
+Primary programming language for all implementations
+
+Jupyter Notebooks
+Interactive development environment for experimentation
+Used for: RAG pipelines, question generation, evaluation analysis
+
+VS Code
+Primary IDE with extensions: Python, Jupyter, GitLens
+
+Git & GitHub
+Version control and collaboration
+Repository: RadieNoice/SRIP
+
+
+C.7 SUPPORTING LIBRARIES
+================================================================================
+
+NLTK (Natural Language Toolkit)
+Use: Sentence tokenization for sentence-based chunking
+Component: punkt tokenizer
+
+Pandas
+Use: Data manipulation, Excel export
+Features: DataFrame operations, evaluation result formatting
+
+tqdm
+Use: Progress bars for long-running operations
+Context: Document chunking, batch processing
+
+python-dotenv
+Use: Environment variable management
+Purpose: API key management for cloud services
+
+OpenAI Python Library
+Use: LM Studio API interaction via OpenAI-compatible endpoint
+Version: Compatible with local OpenAI-like servers
+
+
+C.8 DATA FORMATS
+================================================================================
+
+JSON (JavaScript Object Notation)
+Use: Question storage, evaluation results, dataset export
+Structure: Nested dictionaries with question/rubric/evaluation data
+
+Excel (XLSX via openpyxl)
+Use: Evaluation result exports with formatting
+Features: Auto-adjusted columns, multiple sheets
+
+PDF (Portable Document Format)
+Use: Input textbooks for RAG system
+Parser: UnstructuredPDFLoader with layout-aware extraction
+
+
+C.9 KEY TECHNICAL SPECIFICATIONS
+================================================================================
+
+Hardware Requirements:
+• Local Models (8B): 16GB RAM, GPU optional
+• Local Models (70B): 48GB+ RAM or 24GB+ VRAM
+• Cloud Models: Any device with internet
+
+Software Dependencies:
+• Python: 3.10+
+• CUDA: 11.8+ (for GPU acceleration)
+• Node.js: Not required
+• Docker: Not required
+
+Network Requirements:
+• Together AI API: Internet connection required
+• Ollama: Offline capable after model download
+• LM Studio: Offline capable
+
+
+C.10 INSTALLATION COMMANDS
+================================================================================
+
+```bash
+# Core frameworks
+pip install langchain langchain-community langchain-experimental
+
+# LLM integrations
+pip install langchain-openai together
+
+# Embeddings and vector stores
+pip install sentence-transformers faiss-cpu chromadb
+
+# Utilities
+pip install nltk pandas openpyxl python-dotenv tqdm
+
+# Ollama installation (separate)
+# Visit: https://ollama.ai/download
+ollama pull llama3.1:8b
+ollama pull mistral:7b
+```
+
+
+================================================================================
+END OF APPENDIX C
+================================================================================

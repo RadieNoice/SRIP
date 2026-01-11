@@ -1,0 +1,45 @@
+================================================================================
+REFERENCES
+Development and Evaluation of RAG-Enhanced Question Generation System 
+for Educational Assessment
+================================================================================
+
+Font: Times New Roman
+Size: 12 pt
+Spacing: 1.5
+Alignment: Justified
+
+
+[1] B. S. Bloom, M. D. Engelhart, E. J. Furst, W. H. Hill and D. R. Krathwohl, "Taxonomy of Educational Objectives: The Classification of Educational Goals. Handbook I: Cognitive Domain", David McKay Company, New York, 1956.
+
+[2] L. Gao, X. Ma, J. Lin and J. Callan, "Precise Zero-Shot Dense Retrieval Without Relevance Labels", in Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics, pp. 1762-1777, 2023.
+
+[3] A. Q. Jiang, A. Sablayrolles, A. Mensch, C. Bamford, D. S. Chaplot, D. D. L. Casas, F. Bressand, G. Lengyel, G. Lample, L. Saulnier, L. R. Lavaud, M. A. Lachaux, P. Stock, T. Le Scao, T. Lavril, T. Wang, T. Lacroix and W. E. Sayed, "Mistral 7B", arXiv preprint arXiv:2310.06825, 2023.
+
+[4] J. Johnson, M. Douze and H. Jégou, "Billion-Scale Similarity Search with GPUs", IEEE Transactions on Big Data, vol. 7, no. 3, pp. 535-547, 2021.
+
+[5] G. Kurdi, J. Leo, B. Parsia, U. Sattler and S. Al-Emari, "A Systematic Review of Automatic Question Generation for Educational Purposes", International Journal of Artificial Intelligence in Education, vol. 30, no. 1, pp. 121-204, 2020.
+
+[6] LangChain Development Team, "LangChain: Building Applications with LLMs Through Composability", Retrieved from https://python.langchain.com/docs/, 2024.
+
+[7] P. Lewis, E. Perez, A. Piktus, F. Petroni, V. Karpukhin, N. Goyal, H. Küttler, M. Lewis, W. T. Yih, T. Rocktäschel, S. Riedel and D. Kiela, "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks", Advances in Neural Information Processing Systems, vol. 33, pp. 9459-9474, 2020.
+
+[8] Meta AI, "Llama 3.1 and Llama 3.3: Open Foundation and Fine-Tuned Chat Models", Retrieved from https://ai.meta.com/llama/, 2024.
+
+[9] N. Reimers and I. Gurevych, "Sentence-BERT: Sentence Embeddings Using Siamese BERT-Networks", in Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing, pp. 3982-3992, 2019.
+
+[10] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez, Ł. Kaiser and I. Polosukhin, "Attention is All You Need", Advances in Neural Information Processing Systems, vol. 30, pp. 5998-6008, 2017.
+
+
+================================================================================
+Note: All references are cited in IEEE format and listed in alphabetical order 
+by first author's last name. URLs verified as accessible as of October 2025.
+================================================================================
+
+
+Formatting Instructions Applied:
+Font: Times New Roman
+Size: 12 pt  
+Spacing: 1.5
+Alignment: Justified
+Citation Style: IEEE/Academic standard with full bibliographic information

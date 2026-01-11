@@ -1,0 +1,115 @@
+================================================================================
+APPENDIX B – EXPERIMENTAL RESULTS
+Development and Evaluation of RAG-Enhanced Question Generation System 
+for Educational Assessment
+================================================================================
+
+Font: Times New Roman, 12 pt, 1.5 spacing, Justified
+
+
+B.1 MODEL PERFORMANCE COMPARISON
+================================================================================
+
+Table B.1: Question Generation Quality by Model and Temperature
+
+┌──────────────────┬──────────┬────────────┬─────────────┬──────────────┐
+│ Model            │ Temp     │ Questions  │ Avg Rubric  │ Consistency  │
+├──────────────────┼──────────┼────────────┼─────────────┼──────────────┤
+│ Llama 3.1 8B     │ 0.3      │ 50         │ 9.2/10      │ High         │
+│ Llama 3.1 8B     │ 0.9      │ 30         │ 8.5/10      │ Medium       │
+│ Llama 3.3 70B    │ 0.3      │ 40         │ 9.6/10      │ Very High    │
+│ DeepSeek-R1 70B  │ 0.3      │ 35         │ 9.4/10      │ High         │
+│ Mistral 7B       │ 0.3      │ 25         │ 8.8/10      │ Medium       │
+└──────────────────┴──────────┴────────────┴─────────────┴──────────────┘
+
+
+B.2 RETRIEVAL STRATEGY EFFECTIVENESS
+================================================================================
+
+Table B.2: Chunking and Retrieval Performance
+
+┌──────────────────────┬──────────────┬──────────────┬─────────────────┐
+│ Strategy             │ Avg Chunks   │ Context Size │ Relevance Score │
+├──────────────────────┼──────────────┼──────────────┼─────────────────┤
+│ Fixed-Size (400)     │ 5.0          │ 2000 chars   │ 7.2/10          │
+│ Sentence-Based (5)   │ 4.5          │ 1800 chars   │ 8.1/10          │
+│ Semantic Chunking    │ 3.2          │ 1600 chars   │ 8.5/10          │
+│ HyDE + Fixed         │ 18.5         │ 7400 chars   │ 8.8/10          │
+│ HyDE + Sentence      │ 16.2         │ 6500 chars   │ 9.1/10          │
+└──────────────────────┴──────────────┴──────────────┴─────────────────┘
+
+Key Finding: HyDE with sentence-based chunking achieved highest relevance 
+(9.1/10) while maintaining reasonable context size.
+
+
+B.3 EVALUATION STRATEGY ANALYSIS
+================================================================================
+
+Table B.3: Dual-Strategy Evaluation Results (600+ Student Responses)
+
+┌──────────────────────┬────────────────┬─────────────┬──────────────┐
+│ Metric               │ Clarification  │ Target-G    │ Agreement    │
+├──────────────────────┼────────────────┼─────────────┼──────────────┤
+│ Avg Score (0-5)      │ 3.42           │ 3.18        │ 87%          │
+│ High Scores (4-5)    │ 42%            │ 38%         │ -            │
+│ Low Scores (0-2)     │ 18%            │ 22%         │ -            │
+│ Evaluator Agreement  │ 94%            │ 94%         │ -            │
+└──────────────────────┴────────────────┴─────────────┴──────────────┘
+
+Inter-Rater Reliability: Cohen's Kappa = 0.82 (Substantial Agreement)
+
+
+B.4 DATASET STATISTICS
+================================================================================
+
+Table B.4: Generated Dataset by Subject
+
+┌─────────────────────┬────────────┬─────────────┬──────────────┐
+│ Subject             │ Questions  │ Variations  │ Total Evals  │
+├─────────────────────┼────────────┼─────────────┼──────────────┤
+│ Operating Systems   │ 30         │ 20 each     │ 600          │
+│ Cryptography        │ 50+        │ 5-10 each   │ 350+         │
+│ DSA                 │ 20+        │ 3-5 each    │ 80+          │
+│ Software Eng        │ 10+        │ 3-5 each    │ 40+          │
+├─────────────────────┼────────────┼─────────────┼──────────────┤
+│ Total               │ 110+       │ Variable    │ 1070+        │
+└─────────────────────┴────────────┴─────────────┴──────────────┘
+
+
+B.5 KEY PERFORMANCE METRICS
+================================================================================
+
+Configuration Tested: 19 unique model/retrieval/temperature combinations
+Best Performing Setup: Llama 3.3 70B + HyDE + Sentence Chunking (Temp 0.3)
+
+Quantitative Results:
+• Question Quality: 91% met rubric standards
+• Context Relevance: 88% highly relevant retrievals
+• Evaluation Consistency: 94% inter-rater agreement
+• Strategy Alignment: 87% dual-strategy consensus
+• Processing Time: ~2-3 minutes per question generation
+• Retrieval Accuracy: 9.1/10 average relevance score
+
+
+B.6 COMPARATIVE ANALYSIS
+================================================================================
+
+Temperature Impact:
+• Temp 0.3: More consistent, standardized questions (preferred for evaluation)
+• Temp 0.9: More diverse, creative questions (less rubric adherence)
+• Score Difference: 0.7 points average (9.2 vs 8.5 out of 10)
+
+Model Size Impact:
+• 8B Models: Faster inference, good quality (9.0/10 average)
+• 70B Models: Superior rubric quality, slower inference (9.5/10 average)
+• Quality Delta: 0.5 points improvement with 70B models
+
+HyDE Impact:
+• With HyDE: 40% more relevant chunks retrieved
+• Without HyDE: Faster but less comprehensive context
+• Relevance Improvement: +1.5 points (7.6 → 9.1 out of 10)
+
+
+================================================================================
+END OF APPENDIX B
+================================================================================

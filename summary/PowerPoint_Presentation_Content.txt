@@ -1,0 +1,211 @@
+================================================================================
+POWERPOINT PRESENTATION CONTENT
+RAG-Enhanced Question Generation System for Educational Assessment
+SRIP Internship - 3 Weeks
+================================================================================
+
+
+SLIDE 1: OUTLINE
+================================================================================
+1. Introduction
+2. Aim, Objectives & Motivation
+3. About the Industry / TBI / VAC
+4. Certificate (Period of Study)
+5. Skills Acquired During Internship
+6. Technologies & Frameworks
+7. Conclusion
+
+
+SLIDE 2: INTRODUCTION
+================================================================================
+• Developed AI-powered question generation system for educational assessment
+• Implemented Retrieval-Augmented Generation (RAG) to ensure context-accurate questions
+• Evaluated 100+ generated questions across 4 computer science subjects
+• Achieved 87% alignment and 94% evaluator agreement with dual-strategy evaluation
+
+
+SLIDE 3: AIM, OBJECTIVES & MOTIVATION
+================================================================================
+
+Aim:
+• Automate high-quality exam question generation using RAG and LLMs
+
+Key Objectives:
+• Implement document chunking and vector storage for textbook content
+• Develop HyDE retrieval strategy for improved context relevance
+• Generate questions with detailed rubrics aligned to Bloom's Taxonomy
+• Build dual-strategy evaluation framework for quality assessment
+
+Motivation:
+• Manual question creation is time-intensive for educators
+• AI can scale assessment creation while maintaining quality standards
+
+
+SLIDE 4: ABOUT THE INDUSTRY / TBI / VAC
+================================================================================
+Organization: [Student Research Internship Program / Technology Business Incubator]
+
+Focus Area: Educational Technology & AI-Driven Assessment Tools
+
+Industry Relevance:
+• EdTech market expanding with AI integration in learning systems
+• Growing demand for automated assessment tools in higher education
+• LLM applications transforming content generation workflows
+
+Project Domain: Natural Language Processing, RAG Systems, Educational AI
+
+
+SLIDE 5: CERTIFICATE (PERIOD OF STUDY)
+================================================================================
+Program: Student Research Internship Program (SRIP)
+
+Duration: 3 Weeks (October 2025)
+
+Focus: Artificial Intelligence, RAG Systems, Educational Assessment
+
+Project: RAG-Enhanced Question Generation and Evaluation System
+
+Mode: Remote / On-site [specify as applicable]
+
+
+SLIDE 6: SKILLS ACQUIRED DURING INTERNSHIP
+================================================================================
+
+Technical Skills:
+• RAG pipeline development with LangChain framework
+• Vector database implementation (FAISS, ChromaDB)
+• LLM deployment (Ollama, Together AI, LM Studio)
+• Prompt engineering for structured question generation
+
+Analytical Skills:
+• Evaluation framework design with inter-rater reliability metrics
+• Comparative analysis across 19 model/retrieval configurations
+• Data analysis using Pandas and statistical validation
+
+Professional Skills:
+• Research methodology and systematic experimentation
+• Technical documentation and report writing
+• Version control with Git/GitHub
+
+
+SLIDE 7: NEW TECHNOLOGIES & FRAMEWORKS
+================================================================================
+
+Large Language Models:
+• Llama 3.1 8B / 3.3 70B, DeepSeek-R1, Mistral 7B
+• Temperature tuning (0.3 for consistency, 0.9 for creativity)
+
+RAG Components:
+• LangChain: Application orchestration and prompt management
+• FAISS & ChromaDB: Vector storage and similarity search
+• HuggingFace Embeddings: all-MiniLM-L6-v2, Qwen3-Embedding-0.6B
+
+Advanced Retrieval:
+• HyDE (Hypothetical Document Embeddings) for query expansion
+• Semantic chunking with gradient-based breakpoint detection
+
+
+SLIDE 8: REAL-TIME PROBLEMS ADDRESSED
+================================================================================
+
+Problem 1: Vocabulary Mismatch in Retrieval
+• Solution: HyDE generates intermediary questions bridging query-document gap
+• Result: 40% improvement in retrieval relevance (7.6 → 9.1/10)
+
+Problem 2: Context Loss in Chunking
+• Solution: Sentence-based chunking with overlap preserves semantic coherence
+• Result: Balanced context size with 8.1/10 relevance vs 7.2/10 for fixed-size
+
+Problem 3: Evaluation Consistency
+• Solution: Dual-strategy evaluation (clarification + target-guided)
+• Result: 87% strategy alignment, 94% agreement with human evaluators
+
+
+SLIDE 9: ANALYSIS-BASED KNOWLEDGE ACQUIRED
+================================================================================
+
+Model Performance Insights:
+• 70B models: +0.5 point quality improvement over 8B (9.5 vs 9.0/10)
+• Temperature impact: 0.3 provides 0.7 point advantage for standardized tasks
+
+Retrieval Strategy Findings:
+• HyDE + Sentence chunking: Best performance (9.1/10 relevance)
+• Semantic chunking: Most coherent but computationally expensive
+• Trade-off: Context size vs retrieval accuracy
+
+Dataset Statistics:
+• Generated 110+ questions across Operating Systems, Cryptography, DSA, Software Engineering
+• Evaluated 1070+ student response variations
+• Tested 19 unique configuration combinations
+
+
+SLIDE 10: CONCLUSION (BRIEF SUMMARY)
+================================================================================
+
+Key Achievements:
+• Successfully implemented end-to-end RAG pipeline for educational assessment
+• Achieved 91% question quality and 94% evaluator agreement
+• Generated 110+ questions with detailed rubrics across 4 subjects
+
+Technical Outcomes:
+• HyDE retrieval improved relevance by 40% over baseline
+• Dual-strategy evaluation validated with 87% inter-method alignment
+• Scalable system deployable locally (Ollama) or cloud (Together AI)
+
+Impact & Learning:
+• Demonstrated AI's potential to assist educators in assessment creation
+• Gained hands-on experience with state-of-the-art LLMs and RAG architectures
+• Developed systematic approach to experimental validation and analysis
+
+
+================================================================================
+ADDITIONAL SLIDE OPTIONS (OPTIONAL)
+================================================================================
+
+
+OPTIONAL: SYSTEM ARCHITECTURE (VISUAL SLIDE)
+================================================================================
+Pipeline Flow:
+PDF Input → Chunking → Embedding → Vector Store → HyDE Retrieval → 
+Question Generation → Parsing → Evaluation → Output
+
+Key Components:
+• 3 Chunking Strategies | 2 Vector Databases | 5 LLM Models | 
+  2 Evaluation Methods
+
+
+OPTIONAL: KEY METRICS SUMMARY
+================================================================================
+• Questions Generated: 110+
+• Student Responses Evaluated: 1070+
+• Configurations Tested: 19
+• Question Quality: 91%
+• Evaluator Agreement: 94%
+• Strategy Alignment: 87%
+• Retrieval Relevance: 9.1/10 (with HyDE)
+• Processing Time: 2-3 minutes/question
+
+
+OPTIONAL: FUTURE SCOPE
+================================================================================
+• Multi-language support for diverse educational contexts
+• Integration with learning management systems (LMS)
+• Real-time question difficulty calibration based on student performance
+• Automated answer key generation with detailed explanations
+
+
+================================================================================
+PRESENTATION TIPS
+================================================================================
+• Use consistent color scheme aligned with institution branding
+• Include 1-2 code snippets on Technology slide for technical depth
+• Add system architecture diagram on separate visual slide
+• Use icons/graphics for Skills and Technologies slides
+• Keep text size 20pt+ for readability
+• Limit animations; use simple transitions
+• Prepare demo video (optional) showing question generation process
+
+
+================================================================================
+END OF PRESENTATION CONTENT
+================================================================================

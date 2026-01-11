@@ -1,0 +1,62 @@
+================================================================================
+INTERNSHIP AIMS AND OBJECTIVES
+Development and Evaluation of RAG-Enhanced Question Generation System 
+for Educational Assessment
+================================================================================
+
+Font: Times New Roman
+Size: 12 pt
+Spacing: 1.5
+Alignment: Justified
+
+
+The primary aim of this internship was to design, develop, and validate a comprehensive Retrieval-Augmented Generation system capable of automatically generating high-quality educational assessment materials including examination questions, detailed evaluation rubrics, ideal answers, and diverse student response variations while maintaining pedagogical rigor and contextual accuracy aligned with course learning objectives.
+
+Primary Technical Objectives:
+
+First, to investigate and establish baseline capabilities of Large Language Models for educational content generation without retrieval augmentation, measuring intrinsic model performance across multiple architectures (Llama 3.1 8B, Llama 3.3 70B, DeepSeek-R1, Mistral 7B) and temperature settings (0.3, 0.7, 0.9) to understand the fundamental strengths and limitations of standalone generative approaches for educational assessment creation.
+
+Second, to design and implement multiple RAG architectures incorporating diverse document processing strategies, text chunking algorithms (recursive character splitting, sentence-based chunking, semantic chunking), embedding models (HuggingFace all-MiniLM-L6-v2, Qwen3-Embedding-0.6B), and vector store implementations (FAISS, ChromaDB) to optimize information retrieval quality and computational efficiency for educational content spanning multiple computer science domains.
+
+Third, to conduct systematic experimentation comparing retrieval techniques including standard vector similarity search, HyDE (Hypothetical Document Embeddings), and hybrid approaches to identify optimal strategies for generating contextually accurate questions that reference only course-covered material while maintaining appropriate difficulty levels and comprehensive topic coverage.
+
+Fourth, to develop and validate a dual-strategy evaluation framework implementing both clarification-based assessment (lenient, interpretive) and target-guided assessment (strict, criterion-referenced) for automated scoring of student responses, achieving measurable agreement rates with human evaluator judgments and providing detailed, rubric-aligned reasoning for assigned scores.
+
+Fifth, to generate substantial, production-quality datasets containing a minimum of 100 computer science examination questions across Operating Systems, Data Structures and Algorithms, Cryptography and Network Security, and Software Engineering, with each question accompanied by comprehensive rubrics (3-5 independently assessable criteria), ideal answers, and 20+ student response variations spanning the full quality spectrum from incorrect to exemplary.
+
+Sixth, to implement and evaluate agentic RAG approaches incorporating autonomous reasoning loops, dynamic tool selection, and iterative refinement mechanisms to explore advanced AI-assisted educational assessment capabilities and identify performance improvements over traditional linear RAG pipelines.
+
+Research and Learning Objectives:
+
+To develop deep technical expertise in Large Language Model integration, prompt engineering for educational contexts, vector database optimization, and information retrieval algorithm implementation through hands-on experimentation with production-scale systems handling thousands of documents and generating hundreds of assessment items.
+
+To acquire comprehensive understanding of educational assessment theory including Bloom's Taxonomy, rubric design principles, criterion-referenced evaluation, and pedagogical alignment between assessment instruments and learning objectives, enabling creation of AI systems that respect and enhance rather than undermine educational quality standards.
+
+To master experimental methodology for AI systems research including controlled variable testing, systematic ablation studies, quantitative and qualitative evaluation metrics, and documentation of reproducible results that enable peer validation and future research building upon this foundation.
+
+Expected Outcomes and Impact:
+
+The internship aimed to produce a validated, production-ready system demonstrating 60-70% reduction in instructor workload for question generation while achieving 85%+ alignment with course materials and 90%+ agreement with human evaluators on response scoring. Deliverables included comprehensive datasets totaling 100+ questions with 600+ student responses, detailed comparative analysis across 11+ configuration variations, reusable code implementations with clear documentation, and validated best practices for prompt engineering, retrieval optimization, and evaluation framework design applicable to educational technology companies and academic institutions seeking to leverage AI for scalable, high-quality assessment.
+
+
+================================================================================
+Word Count: 496 words
+================================================================================
+
+
+This section comprehensively addresses:
+
+✓ Primary Aim: Clear statement of overall internship goal
+✓ Technical Objectives: Six specific, measurable technical goals (1-6)
+✓ Research/Learning Objectives: Professional development goals
+✓ Expected Outcomes: Quantifiable targets and deliverables
+✓ Measurable Goals: Specific metrics (60-70% reduction, 85%+ alignment, 90%+ agreement, 100+ questions, 600+ responses)
+✓ Industry/Academic Relevance: Connection to real-world applications
+
+
+Formatting Instructions Applied:
+Font: Times New Roman
+Size: 12 pt  
+Spacing: 1.5
+Alignment: Justified
+Tone: Formal, precise, objective-focused

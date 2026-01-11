@@ -1,0 +1,138 @@
+================================================================================
+APPENDIX A – CODE AND PIPELINE SNAPSHOTS
+Development and Evaluation of RAG-Enhanced Question Generation System 
+for Educational Assessment
+================================================================================
+
+Font: Times New Roman, 12 pt, 1.5 spacing, Justified
+
+
+A.1 DOCUMENT PROCESSING PIPELINE
+================================================================================
+
+```python
+# PDF Loading and Chunking
+from langchain_community.document_loaders import UnstructuredPDFLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+loader = UnstructuredPDFLoader(file_path="textbook.pdf", mode="elements")
+docs = loader.load()
+
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=400, chunk_overlap=100)
+chunks = text_splitter.split_documents(docs)
+```
+
+
+A.2 VECTOR STORE CREATION
+================================================================================
+
+```python
+# FAISS Vector Database
+from langchain.embeddings import HuggingFaceEmbeddings
+from langchain.vectorstores import FAISS
+
+embedder = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+vectorstore = FAISS.from_documents(chunks, embedder)
+retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+```
+
+
+A.3 HyDE RETRIEVAL
+================================================================================
+
+```python
+# Hypothetical Document Embeddings
+from langchain_community.chat_models import ChatOllama
+
+llm = ChatOllama(model="llama3.1:8b", temperature=0.3)
+
+def generate_hypothetical_questions(topic, num=5):
+    prompt = f"Generate {num} exam questions on: {topic}"
+    response = llm.invoke(prompt)
+    return response.split("\n")
+
+def build_context_with_hyde(query, retriever, k_per_q=4):
+    hypo_qs = generate_hypothetical_questions(query)
+    all_docs = [retriever.get_relevant_documents(q)[:k_per_q] for q in hypo_qs]
+    return "\n\n".join([d.page_content for docs in all_docs for d in docs])
+```
+
+
+A.4 QUESTION GENERATION
+================================================================================
+
+```python
+# Question Generation with Rubric
+question_prompt = """Generate exam questions with rubrics based on context.
+Context: {context}
+Bloom Level: {bloom_level}
+Format: Question + 4 criteria (10 marks total)"""
+
+response = llm.invoke(question_prompt.format(
+    context=context, 
+    bloom_level="Analyze/Evaluate"
+))
+```
+
+
+A.5 EVALUATION PIPELINE
+================================================================================
+
+```python
+# Dual-Strategy Evaluation
+from langchain_openai import ChatOpenAI
+
+llm = ChatOpenAI(
+    model="deepseek-r1",
+    temperature=0.3,
+    base_url="http://localhost:1234/v1"
+)
+
+eval_prompt = """Evaluate student answer using {strategy}.
+Question: {question}
+Rubric: {rubric}
+Student Answer: {answer}
+Return JSON: {{"score": 0-5, "reasoning": "..."}}"""
+
+result = llm.invoke(eval_prompt)
+```
+
+
+A.6 CONFIGURATION SUMMARY
+================================================================================
+
+Table A.1: Model Configurations
+┌──────────────────┬────────────┬──────────┬──────────────┐
+│ Model            │ Parameters │ Temp     │ Deployment   │
+├──────────────────┼────────────┼──────────┼──────────────┤
+│ Llama 3.1 8B     │ 8B         │ 0.3, 0.9 │ Ollama       │
+│ Llama 3.3 70B    │ 70B        │ 0.3      │ Together AI  │
+│ DeepSeek-R1      │ 8B/70B     │ 0.3      │ LM Studio    │
+│ Mistral 7B       │ 7B         │ 0.3, 0.9 │ Ollama       │
+└──────────────────┴────────────┴──────────┴──────────────┘
+
+Table A.2: Chunking Strategies
+┌──────────────────┬──────────────┬────────────┬────────────┐
+│ Strategy         │ Size         │ Overlap    │ Embeddings │
+├──────────────────┼──────────────┼────────────┼────────────┤
+│ Fixed-Size       │ 400 chars    │ 100 chars  │ MiniLM-L6  │
+│ Sentence-Based   │ 5 sentences  │ 1 sentence │ MiniLM-L6  │
+│ Semantic         │ Gradient     │ N/A        │ Qwen3-0.6B │
+└──────────────────┴──────────────┴────────────┴────────────┘
+
+
+A.7 SYSTEM PIPELINE
+================================================================================
+
+INPUT (PDFs) → PREPROCESSING → CHUNKING → EMBEDDING → VECTOR STORE
+    → HyDE RETRIEVAL → QUESTION GENERATION → PARSING → EVALUATION → OUTPUT
+
+Key Metrics:
+• 100+ questions generated across 4 subjects
+• 600+ student responses evaluated
+• 87% strategy alignment, 94% evaluator agreement
+
+
+================================================================================
+END OF APPENDIX A
+================================================================================
